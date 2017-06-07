@@ -1,7 +1,14 @@
 #funckcje-produktu{
     background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
 }
 
 .ikony{
     width:12em;
+}
+
+.ikona{
+    border: 1px solid black  ;
+
 }
