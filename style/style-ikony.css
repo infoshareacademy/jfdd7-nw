@@ -9,6 +9,17 @@
 }
 
 .ikona{
-    border: 1px solid black  ;
+    margin: 150px 10px 10px;
+}
+
+.opis{
+    width: 13em;
+    border: 0 solid black;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px 0;
+    margin: 0 0 150px 27px
+
+
 
 }
