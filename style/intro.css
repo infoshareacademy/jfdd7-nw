@@ -1,7 +1,8 @@
 .intro{
     background-image: url(../zdjecia/zajawka.jpg);
-    background-size: cover ;
-    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
     padding: 100px;
 }
 
@@ -19,5 +20,21 @@ h1 span{
     padding: 10px;
 
 
+}
+.button_newsletter {
+    width:300px;
+    background-color:antiquewhite;
+    border:1px solid black;
+    border-radius:10px;
+    padding:10px;
+    margin:10px 5px;
+}
+.button_newsletter_text {
+    font-size:24px;
+    font-weight:bold;
+    color:#333333;
+    white-space:nowrap;
+    display:block;
+    text-align:center;
 }
 
