@@ -2,7 +2,7 @@
     background-image: url(../zdjecia/zajawka.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 65vh;
     padding: 100px;
 }
 
@@ -15,6 +15,7 @@ h1 {
 
 }
 h1 span{
+    line-height: 1.52;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
@@ -27,7 +28,7 @@ h1 span{
     border:1px solid black;
     border-radius:10px;
     padding:10px;
-    margin:10px 5px;
+    margin: 100px auto;
 }
 .button_newsletter_text {
     font-size:24px;
@@ -36,5 +37,20 @@ h1 span{
     white-space:nowrap;
     display:block;
     text-align:center;
+}
+h2 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font: bold 20px/30px Sans-Serif;
+    letter-spacing: -1px;
+
+}
+h2 span {
+    line-height: 2.1;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
 }
 
