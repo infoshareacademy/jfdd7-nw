@@ -28,6 +28,7 @@ li a {
     background: rgba(0, 0, 0, 0.0);
     transition-duration:0.4s;
     transition-timing-function:ease-out;
+    white-space: nowrap;
 }
 nav{
     overflow: hidden;
