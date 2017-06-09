@@ -1,0 +1,22 @@
+#o-nas{
+    display: flex;
+    justify-content: center;
+}
+
+.osoba{
+    width:12em;
+}
+
+.zdjecie{
+    margin: 150px 10px 0;
+    width: 250px;
+    height: 250px;
+}
+
+.o-mnie {
+    width: 13em;
+    text-align: center;
+    font-size: 1.1em;
+
+    margin: 0 0 100px 0;
+}
