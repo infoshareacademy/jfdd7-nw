@@ -4,83 +4,99 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style/style-ikony.css">
 	<link rel="stylesheet" type="text/css" href="style/intro.css">
+	<link rel="stylesheet" type="text/css" href="style/navbar.css">
 	<title>Zakupowy pomocnik</title>
 </head>
 <body>
 
-	<main>
 
-		<section id="zajawka" class="intro">
+<header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#funckcje-produktu">Funkcje</a></li>
+			<li><a href="#formularz">Zapisz sie!</a></li>
+			<li><a href="#">O nas</a></li>
+		</ul>
 
-	<div class="wrapper">
 
-	<h1><span>Pomocnik Zakupowy</span></h1>
+	</nav>
+</header>
 
-		<h2><span>Już wkrótce otwarcie nowego serwisu zakupowego. Zapraszamy do zapoznania się z funkcjami.</span></h2>
+<main>
 
-	</div>
-			<div class="button_newsletter" align="mid">
+	<section id="zajawka" class="intro">
 
-				<a href="#formularz" style="text-decoration:none">
+		<div class="wrapper">
+
+			<h1><span>Pomocnik Zakupowy</span></h1>
+
+			<h2><span>Już wkrótce otwarcie nowego serwisu zakupowego. Zapraszamy do zapoznania się z funkcjami.</span>
+			</h2>
+
+		</div>
+		<div class="button_newsletter" align="mid">
+
+			<a href="#formularz" style="text-decoration:none">
 
 				<span class="button_newsletter_text">Zapisz się już dziś!</span></a>
 
+		</div>
+
+
+	</section>
+
+
+	<section id="funckcje-produktu">
+
+		<section class="funkcja">
+			<div class="ikona">
+				<!--ikona--><img class="ikony" src="images/cena.png" alt="ikona" title="ikona"/>
 			</div>
 
-
+			<article class="opis">
+				<!--informacje o funkcji-->Wyszukiwarka najtańszych ofert - znajdź najlepszą <br/>cenę w sieci!
+			</article>
 		</section>
 
+		<section class="funkcja">
+			<div class="ikona">
+				<!--ikona--><img class="ikony" src="images/produkt.png" alt="ikona" title="ikona"/>
+			</div>
 
-
-
-			<section id="funckcje-produktu">
-
-			<section class="funkcja">
-				<div class="ikona">
-					<!--ikona--><img class="ikony" src="images/cena.png" alt="ikona" title="ikona" />
-				</div>
-
-				<article class="opis">
-					<!--informacje o funkcji-->Wyszukiwarka najtańszych ofert - znajdź najlepszą <br />cenę w sieci!
-				</article>
-			</section>
-
-			<section class="funkcja">
-				<div class="ikona">
-					<!--ikona--><img class="ikony" src="images/produkt.png" alt="ikona" title="ikona" />
-				</div>
-
-				<article class="opis">
-					<!--informacje o funkcji-->Znajdź poszukiwany produkt jak najbliżej siebie!
-				</article>
-			</section>
-
-			<section class="funkcja">
-				<div class="ikona">
-					<!--ikona--><img class="ikony" src="images/porownywarka.ico" alt="ikona" title="ikona" />
-				</div>
-
-				<article class="opis">
-					<!--informacje o funkcji-->Porównaj wybrane produkty - wybierz najlepszy!
-				</article>
-			</section>
-
-			<section class="funkcja">
-				<div class="ikona">
-					<!--ikona--><img class="ikony" src="images/dostawa.png" alt="ikona" title="ikona" />
-				</div>
-
-				<article class="opis">
-					<!--informacje o funkcji-->Jednym kliknięciem sprawdź najszybszą dostawę!
-				</article>
-			</section>
-
+			<article class="opis">
+				<!--informacje o funkcji-->Znajdź poszukiwany produkt jak najbliżej siebie!
+			</article>
 		</section>
 
-		<section id="formularz">
-			<h2><span>Jeżeli jesteś zainteresowany newsletterem oraz informacją o dacie premiery wpisz swój adres e-mail: </span></h2>
+		<section class="funkcja">
+			<div class="ikona">
+				<!--ikona--><img class="ikony" src="images/porownywarka.ico" alt="ikona" title="ikona"/>
+			</div>
 
-			<form>
+			<article class="opis">
+				<!--informacje o funkcji-->Porównaj wybrane produkty - wybierz najlepszy!
+			</article>
+		</section>
+
+		<section class="funkcja">
+			<div class="ikona">
+				<!--ikona--><img class="ikony" src="images/dostawa.png" alt="ikona" title="ikona"/>
+			</div>
+
+			<article class="opis">
+				<!--informacje o funkcji-->Jednym kliknięciem sprawdź najszybszą dostawę!
+			</article>
+		</section>
+
+	</section>
+
+	<section id="formularz">
+		<h2>
+			<span>Jeżeli jesteś zainteresowany newsletterem oraz informacją o dacie premiery wpisz swój adres e-mail: </span>
+		</h2>
+
+		<form>
 
 			<label>Imię i Nazwisko:</label>
 			<input name="name" placeholder="Imię i nazwisko"><br/>
@@ -96,11 +112,10 @@
 		</form>
 
 
+	</section>
 
-		</section>
 
-
-	</main>
+</main>
 
 </body>
 </html>
