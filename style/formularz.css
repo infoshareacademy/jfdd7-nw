@@ -25,14 +25,22 @@
     font-size: 12px;
     text-align: left;
     width: 100%;
-    color: crimson;
+    color: white;
     line-height: 1px;
 }
 
-#formularz {
-    border: 2px solid black;
-    width: 65%;
-    height: 370px;
+.formularz {
+    background-color: crimson;
+    width: 55%;
+    height: 570px;
     margin-left: auto;
     margin-right: auto;
+
+}
+
+.szerokosc {
+    height: 825px;
+    width: 100%;
+    background-color: lightgrey;
+    padding: 65px 0;
 }
