@@ -4,19 +4,22 @@
 }
 
 .osoba{
-    width:12em;
+    width:250px;
+    height:250px;
 }
 
 .zdjecie{
-    margin: 150px 10px 0;
+    margin: 150px 10px 0 10px;
     width: 250px;
     height: 250px;
+    border: 1px solid black;
 }
 
 .o-mnie {
-    width: 13em;
+    border: 1px solid black;
+    width: 250px;
     text-align: center;
     font-size: 1.1em;
 
-    margin: 0 0 100px 0;
+    margin: 0 10px 100px 10px;
 }
