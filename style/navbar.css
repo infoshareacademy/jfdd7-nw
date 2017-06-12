@@ -41,7 +41,10 @@ nav{
 }
 .logo_belka {
     background-image: url(../images/logo_nav.jpg);
-    height: 75px;
-    width: 75px;
-    position: relative;
+    height: 90px;
+    width: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-left: 15px;
 }
