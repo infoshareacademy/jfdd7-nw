@@ -31,16 +31,17 @@
 
 .formularz {
     background-color: crimson;
-    width: 55%;
-    height: 570px;
+    width: 450px;
+    height: 450px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 65px;
 
 }
 
 .szerokosc {
-    height: 825px;
+    height: 600px;
     width: 100%;
     background-color: lightgrey;
-    padding: 65px 0;
+    padding: 150px 0;
 }
