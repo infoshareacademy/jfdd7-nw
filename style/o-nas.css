@@ -23,3 +23,7 @@
 
     margin: 0 10px 100px 10px;
 }
+
+.o-mnie>a{
+    text-decoration: none;
+}
