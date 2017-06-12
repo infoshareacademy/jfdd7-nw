@@ -1,7 +1,5 @@
 ul{
     text-decoration: none;
-    /*padding-left: 10px;*/
-    /*padding-right: 10px;*/
     list-style-type: none;
     text-align: center;
     line-height: 65px;
@@ -40,4 +38,10 @@ nav{
     position: fixed;
     color: white;
     font-weight: bold;
+}
+.logo_belka {
+    background-image: url(../images/logo_nav.jpg);
+    height: 75px;
+    width: 75px;
+    position: relative;
 }
