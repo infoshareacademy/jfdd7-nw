@@ -2,7 +2,7 @@ ul{
     text-decoration: none;
     list-style-type: none;
     text-align: center;
-    line-height: 65px;
+    line-height: 47px;
     margin: 0;
 }
 li{
@@ -22,25 +22,26 @@ li a {
     display: inline-block;
     padding: 13px;
     font-size: 25px;
-    background: rgba(0, 0, 0, 0.0);
+    background: rgba(0, 0, 0, 0);
     transition-duration:0.4s;
     transition-timing-function:ease-out;
     white-space: nowrap;
 }
-nav{
+body>header>nav{
+    font-family: 'Open Sans Condensed', sans-serif;
     overflow: hidden;
     margin-top: 12px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 1);
     display: block;
     width: 100%;
-    height: 90px;
+    height: 70px;
     position: fixed;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 .logo_belka {
     background-image: url(../images/logo_nav.jpg);
-    height: 90px;
+    height: 70px;
     width: 200px;
     position: absolute;
     background-repeat: no-repeat;
