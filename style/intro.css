@@ -2,8 +2,10 @@
     background-image: url(../zdjecia/zajawka.jpg);
     background-size: cover;
     background-position: center;
-    height: 65vh;
+    height: 100%;
     padding: 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 h1 {
