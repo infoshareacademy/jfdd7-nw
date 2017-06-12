@@ -12,18 +12,25 @@
     margin: 150px 10px 0 10px;
     width: 250px;
     height: 250px;
-    border: 1px solid black;
+
 }
 
 .o-mnie {
-    border: 1px solid black;
+
     width: 250px;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 20px;
+    font-style: italic;
 
     margin: 0 10px 100px 10px;
+
 }
 
 .o-mnie>a{
     text-decoration: none;
+}
+
+.o-mnie>a>img{
+    width: 50px;
+    margin-top: 5px;
 }
