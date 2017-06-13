@@ -2,27 +2,53 @@
     display: flex;
     justify-content: center;
 }
+#funkcje-produktu-dodatkowe{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 .ikony{
-    width:12em;
+    width:10em;
 }
 
 .ikona{
-    margin: 150px 10px 0;
+    text-align: center;
+    margin: 150px 10px 0px;
+    width: 250px;
+    height: 250px;
+}
+.ikona-dodatkowe{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
     width: 250px;
     height: 250px;
 }
 
 .opis {
-    width: 13em;
+    width: 15em;
     text-align: center;
     font-size: 1.1em;
 
     margin: 0 0 100px 0;
 }
+.opis-dodatkowe {
+    width: 15em;
+    text-align: center;
+    font-size: 1.1em;
 
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 10px;
+}
 body
 {
     font-family: 'Didact Gothic', sans-serif;
     margin: 0;
 }
+.
