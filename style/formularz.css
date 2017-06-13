@@ -6,7 +6,7 @@ fieldset{
     height: 400px;
     /*background-size: cover;*/
     background: linear-gradient(to bottom , #8e8e8e, #2b3042);
-    box-shadow: 0 5px 15px black;
+    box-shadow: 0 5px 10px black;
 }
 
 legend{
@@ -48,9 +48,20 @@ form{
     margin-left: 8px;
     width: 100px;
     font-size: larger;
-    background-color: goldenrod;
+    background-color: white;
+    color: #2B3042;
+    font-weight: bold;
 }
 
+.przycisk:hover{
+
+    background-color: #2B3042;
+    color: white;
+    border: 0 grey;
+}
+.przycisk:visited{
+    border:0;
+}
 
 fieldset>p{
     color: white;
