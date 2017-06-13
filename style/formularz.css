@@ -1,9 +1,12 @@
 fieldset{
     width: 500px;
     border-radius: 6%;
-    background-image: url("../images/formularz-tlo.jpg");
+    /*background-image: url("../images/formularz-tlo.jpg");*/
     border: 0px;
     height: 400px;
+    /*background-size: cover;*/
+    background: linear-gradient(to bottom , #8e8e8e, #2b3042);
+    box-shadow: 0 5px 15px black;
 }
 
 legend{
@@ -31,6 +34,7 @@ legend{
 
 }
 form{
+    margin-top: 35px;
     display: flex;
     justify-content: center;
 }
@@ -48,6 +52,8 @@ form{
 }
 
 
-form>p{
-
+fieldset>p{
+    color: white;
+    text-shadow: 2px 2px black;
+    margin:70px 0 0 16px;
 }
