@@ -1,38 +1,70 @@
-.newsletter {
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+fieldset{
+    width: 500px;
+    border-radius: 6%;
+    /*background-image: url("../images/formularz-tlo.jpg");*/
+    border: 0px;
+    height: 400px;
+    /*background-size: cover;*/
+    background: linear-gradient(to bottom , #8e8e8e, #2b3042);
+    box-shadow: 0 5px 10px black;
+}
+
+legend{
+    background-image: url("../images/koperta.jpg");
+    width:120px;
+    height:120px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px black solid;
+    background-color: white;
+    background-size: 90px 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 5px 10px black;
+}
+legend{
+    display: block;
     text-align: center;
+    border-radius: 50%;
 }
 
-.email {
-    height: 30px;
-    margin-top: 50px;
-    width: 80%;
+.formularz{
+    display: flex;
+    justify-content: center;
+
+}
+form{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.mail{
+    height:50px;
     text-align: center;
-    margin-bottom: 10px;
-    }
-
-.news_button {
-    height: 30px;
-    width: 120px;
-    margin-top: 10px;
-    margin-bottom: 100px
+    font-size: 28px;
+}
+.przycisk{
+    margin-left: 8px;
+    width: 100px;
+    font-size: larger;
+    background-color: white;
+    color: #2B3042;
+    font-weight: bold;
 }
 
-.lista_email {
-    margin-left: 80px;
-    font-size: 12px;
-    text-align: left;
-    width: 100%;
-    color: crimson;
-    line-height: 1px;
+.przycisk:hover{
+
+    background-color: #2B3042;
+    color: white;
+    border: 0 grey;
+}
+.przycisk:visited{
+    border:0;
 }
 
-#formularz {
-    border: 2px solid black;
-    width: 65%;
-    height: 370px;
-    margin-left: auto;
-    margin-right: auto;
+fieldset>p{
+    color: white;
+    text-shadow: 2px 2px black;
+    margin:70px 0 0 16px;
 }
