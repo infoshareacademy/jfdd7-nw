@@ -2,19 +2,16 @@
     display: flex;
     justify-content: center;
 }
-
 .osoba{
     width:250px;
     height:250px;
 }
-
 .zdjecie{
     margin: 150px 10px 0 10px;
     width: 250px;
     height: 250px;
 
 }
-
 .o-mnie {
 
     width: 250px;
@@ -25,11 +22,9 @@
     margin: 0 10px 100px 10px;
 
 }
-
 .o-mnie>a{
     text-decoration: none;
 }
-
 .o-mnie>a>img{
     width: 50px;
     margin-top: 5px;
