@@ -1,6 +1,7 @@
 #o-nas {
     display: flex;
     justify-content: center;
+
 }
 
 .osoba {
@@ -8,6 +9,21 @@
     height: 250px;
 }
 
+.osoby {
+    margin-top: -100px;
+}
+.tlo {
+    border-top: 2px solid lightgrey;
+    background-image: url(../images/tlo-o-nas.png);
+    width: 100%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+    border-bottom: 2px solid lightgrey;
+}
 .zdjecie {
     margin: 150px 10px 0 10px;
     width: 250px;
@@ -33,3 +49,4 @@
     width: 50px;
     margin-top: 5px;
 }
+
