@@ -1,14 +1,14 @@
-#o-nas{
+#o-nas {
     display: flex;
     justify-content: center;
 }
 
-.osoba{
-    width:250px;
-    height:250px;
+.osoba {
+    width: 250px;
+    height: 250px;
 }
 
-.zdjecie{
+.zdjecie {
     margin: 150px 10px 0 10px;
     width: 250px;
     height: 250px;
@@ -26,11 +26,11 @@
 
 }
 
-.o-mnie>a{
+.o-mnie > a {
     text-decoration: none;
 }
 
-.o-mnie>a>img{
+.o-mnie > a > img {
     width: 50px;
     margin-top: 5px;
 }

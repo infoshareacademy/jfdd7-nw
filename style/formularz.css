@@ -1,16 +1,16 @@
-main>section>fieldset{
+main > section > fieldset {
     width: 500px;
     border-radius: 6%;
     border: 0px;
     height: 400px;
-    background: linear-gradient(to bottom , #8e8e8e, #2b3042);
+    background: linear-gradient(to bottom, #8e8e8e, #2b3042);
     box-shadow: 0 5px 10px black;
 }
 
-main>section>fieldset>legend{
+main > section > fieldset > legend {
     background-image: url("../images/koperta.jpg");
-    width:120px;
-    height:120px;
+    width: 120px;
+    height: 120px;
     margin: 20px;
     padding: 10px;
     border: 1px black solid;
@@ -24,24 +24,26 @@ main>section>fieldset>legend{
     border-radius: 50%;
 }
 
-#formularz{
+#formularz {
     padding: 100px;
     display: flex;
     justify-content: center;
 
 }
-main>section>fieldset>form{
+
+main > section > fieldset > form {
     margin-top: 35px;
     display: flex;
     justify-content: center;
 }
 
-.mail{
-    height:50px;
+.mail {
+    height: 50px;
     text-align: center;
     font-size: 28px;
 }
-.przycisk{
+
+.przycisk {
     margin-left: 8px;
     width: 100px;
     font-size: larger;
@@ -50,18 +52,19 @@ main>section>fieldset>form{
     font-weight: bold;
 }
 
-.przycisk:hover{
+.przycisk:hover {
 
     background-color: #2B3042;
     color: white;
     border: 0 grey;
 }
-.przycisk:visited{
-    border:0;
+
+.przycisk:visited {
+    border: 0;
 }
 
-main>section>fieldset>p{
+main > section > fieldset > p {
     color: white;
     text-shadow: 2px 2px black;
-    margin:70px 0 0 16px;
+    margin: 70px 0 0 16px;
 }

@@ -1,4 +1,4 @@
-.intro{
+.intro {
     background-image: url(../zdjecia/zajawka.jpg);
     background-size: cover;
     background-position: center;
@@ -17,30 +17,33 @@ h1 {
     letter-spacing: -1px;
 
 }
-h1 span{
+
+h1 span {
     line-height: 1.52;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.45);
     padding: 10px;
 
-
 }
+
 .button_newsletter {
-    width:300px;
+    width: 300px;
     background-color:;
-    border:1px solid black;
+    border: 1px solid black;
     /*border-radius:10px;*/
-    padding:10px;
+    padding: 10px;
     margin: 100px auto;
 }
+
 .button_newsletter_text {
-    font-size:24px;
-    font-weight:bold;
-    color:#333333;
-    white-space:nowrap;
-    display:block;
-    text-align:center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    white-space: nowrap;
+    display: block;
+    text-align: center;
 }
+
 h2 {
     margin-top: 70px;
     margin-bottom: 20px;
@@ -50,6 +53,7 @@ h2 {
     letter-spacing: -1px;
 
 }
+
 h2 span {
     line-height: 2.1;
     background: rgb(0, 0, 0);

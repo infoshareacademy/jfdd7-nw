@@ -1,33 +1,35 @@
-#funkcje-produktu{
+#funkcje-produktu {
     display: flex;
     justify-content: center;
 }
-#funkcje-produktu-dodatkowe{
+
+#funkcje-produktu-dodatkowe {
     display: flex;
     justify-content: center;
-    width: 65%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 
 }
 
-.ikony{
-    width:10em;
+.ikony {
+    width: 8em;
 }
 
-.ikona{
+.ikona {
     text-align: center;
-    margin: 150px 10px 0px;
+    margin: 150px 10px 0;
     width: 250px;
-    height: 250px;
+    height: 180px;
 }
-.ikona-dodatkowe{
+
+.ikona-dodatkowe {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     width: 250px;
-    height: 250px;
+    height: 180px;
 }
 
 .opis {
@@ -37,18 +39,20 @@
 
     margin: 0 0 100px 0;
 }
+
 .opis-dodatkowe {
     width: 15em;
     text-align: center;
     font-size: 1.1em;
 
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     margin-top: 10px;
 }
-body
-{
+
+body {
     font-family: 'Didact Gothic', sans-serif;
     margin: 0;
 }
+
 .
