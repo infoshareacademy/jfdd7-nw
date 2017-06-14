@@ -10,10 +10,11 @@
 }
 
 h1 {
+    text-shadow: 4px 4px #142608;
     margin-top: 50px;
     text-align: center;
     color: white;
-    font: bold 50px/70px Sans-Serif;
+    font: bold 75px 'Didact Gothic', Sans-Serif;
     letter-spacing: -1px;
 
 }
@@ -28,28 +29,32 @@ h1 span {
 
 .button_newsletter {
     width: 300px;
-    background-color:;
-    border: 1px solid black;
+    background: linear-gradient(to bottom, #8e8e8e, #202020);
+    border: 2px solid black;
     /*border-radius:10px;*/
     padding: 10px;
     margin: 100px auto;
+    box-shadow: 0 5px 10px #373737;
+
 }
 
 .button_newsletter_text {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
-    color: #333333;
+    color: white;
     white-space: nowrap;
     display: block;
     text-align: center;
+    padding:5px;
 }
 
 h2 {
+    text-shadow: 2px 2px black;
     margin-top: 70px;
     margin-bottom: 20px;
     text-align: center;
     color: white;
-    font: bold 20px/30px Sans-Serif;
+    font: bold 30px 'Didact Gothic' , Sans-Serif;
     letter-spacing: -1px;
 
 }
