@@ -10,10 +10,11 @@
 }
 
 h1 {
+    text-shadow: 4px 4px #142608;
     margin-top: 50px;
     text-align: center;
     color: white;
-    font: bold 50px/70px Sans-Serif;
+    font: bold 75px 'Didact Gothic', Sans-Serif;
     letter-spacing: -1px;
 
 }
@@ -33,6 +34,7 @@ h1 span {
     /*border-radius:10px;*/
     padding: 10px;
     margin: 100px auto;
+    box-shadow: 0 5px 10px #373737;
 
 }
 
@@ -47,11 +49,12 @@ h1 span {
 }
 
 h2 {
+    text-shadow: 2px 2px black;
     margin-top: 70px;
     margin-bottom: 20px;
     text-align: center;
     color: white;
-    font: bold 20px/30px Sans-Serif;
+    font: bold 30px 'Didact Gothic' , Sans-Serif;
     letter-spacing: -1px;
 
 }
