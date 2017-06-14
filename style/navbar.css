@@ -1,22 +1,22 @@
-ul{
+header>nav>ul{
     text-decoration: none;
     list-style-type: none;
     text-align: center;
     line-height: 47px;
     margin: 0;
 }
-li{
+header>nav>ul>li{
     padding-right: 30px;
     padding-left: 30px;
     display: inline-block;
     text-decoration: none;
 }
-li a:hover {
+header>nav>ul>li a:hover {
     background-color: white;
     color: black;
     transform: scale(1.2);
 }
-li a {
+header>nav>ul>li a {
     text-decoration: none;
     color: white;
     display: inline-block;

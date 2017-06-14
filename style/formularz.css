@@ -1,4 +1,4 @@
-fieldset{
+main>section>fieldset{
     width: 500px;
     border-radius: 6%;
     /*background-image: url("../images/formularz-tlo.jpg");*/
@@ -9,7 +9,7 @@ fieldset{
     box-shadow: 0 5px 10px black;
 }
 
-legend{
+main>section>fieldset>legend{
     background-image: url("../images/koperta.jpg");
     width:120px;
     height:120px;
@@ -21,19 +21,18 @@ legend{
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 5px 10px black;
-}
-legend{
     display: block;
     text-align: center;
     border-radius: 50%;
 }
 
-.formularz{
+#formularz{
+    padding: 100px;
     display: flex;
     justify-content: center;
 
 }
-form{
+main>section>fieldset>form{
     margin-top: 35px;
     display: flex;
     justify-content: center;
@@ -63,7 +62,7 @@ form{
     border:0;
 }
 
-fieldset>p{
+main>section>fieldset>p{
     color: white;
     text-shadow: 2px 2px black;
     margin:70px 0 0 16px;
