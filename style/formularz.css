@@ -28,7 +28,6 @@ main > section > fieldset > legend {
     padding: 100px;
     display: flex;
     justify-content: center;
-
 }
 
 main > section > fieldset > form {

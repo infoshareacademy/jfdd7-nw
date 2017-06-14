@@ -28,20 +28,22 @@ h1 span {
 
 .button_newsletter {
     width: 300px;
-    background-color:;
-    border: 1px solid black;
+    background: linear-gradient(to bottom, #8e8e8e, #202020);
+    border: 2px solid black;
     /*border-radius:10px;*/
     padding: 10px;
     margin: 100px auto;
+
 }
 
 .button_newsletter_text {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
-    color: #333333;
+    color: white;
     white-space: nowrap;
     display: block;
     text-align: center;
+    padding:5px;
 }
 
 h2 {
