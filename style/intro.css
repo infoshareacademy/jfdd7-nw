@@ -6,6 +6,7 @@
     padding: 100px;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    filter: sepia(50%);
 }
 
 h1 {

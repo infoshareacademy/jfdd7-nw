@@ -26,6 +26,7 @@ header>nav>ul>li a {
     transition-duration:0.4s;
     transition-timing-function:ease-out;
     white-space: nowrap;
+
 }
 body>header>nav{
     font-family: 'Open Sans Condensed', sans-serif;
@@ -38,6 +39,7 @@ body>header>nav{
     position: fixed;
     color: black;
     font-weight: bold;
+
 }
 .logo_belka {
     background-image: url(../images/logo_nav.jpg);
@@ -47,4 +49,7 @@ body>header>nav{
     background-repeat: no-repeat;
     background-size:contain;
     margin-left: 15px;
+}
+nav{
+    z-index: 9000;
 }
