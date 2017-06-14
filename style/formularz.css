@@ -1,10 +1,8 @@
 main>section>fieldset{
     width: 500px;
     border-radius: 6%;
-    /*background-image: url("../images/formularz-tlo.jpg");*/
     border: 0px;
     height: 400px;
-    /*background-size: cover;*/
     background: linear-gradient(to bottom , #8e8e8e, #2b3042);
     box-shadow: 0 5px 10px black;
 }
