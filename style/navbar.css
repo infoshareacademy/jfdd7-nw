@@ -1,34 +1,38 @@
-header>nav>ul{
+header > nav > ul {
     text-decoration: none;
     list-style-type: none;
     text-align: center;
     line-height: 47px;
     margin: 0;
 }
-header>nav>ul>li{
+
+header > nav > ul > li {
     padding-right: 30px;
     padding-left: 30px;
     display: inline-block;
     text-decoration: none;
 }
-header>nav>ul>li a:hover {
+
+header > nav > ul > li a:hover {
     background-color: white;
     color: black;
     transform: scale(1.2);
 }
-header>nav>ul>li a {
+
+header > nav > ul > li a {
     text-decoration: none;
     color: white;
     display: inline-block;
     padding: 13px;
     font-size: 25px;
     background: rgba(0, 0, 0, 0);
-    transition-duration:0.4s;
-    transition-timing-function:ease-out;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
     white-space: nowrap;
 
 }
-body>header>nav{
+
+body > header > nav {
     font-family: 'Open Sans Condensed', sans-serif;
     overflow: hidden;
     margin-top: 12px;
@@ -41,15 +45,17 @@ body>header>nav{
     font-weight: bold;
 
 }
+
 .logo_belka {
     background-image: url(../images/logo_nav.jpg);
     height: 70px;
     width: 200px;
     position: absolute;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     margin-left: 15px;
 }
-nav{
+
+nav {
     z-index: 9000;
 }
