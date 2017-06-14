@@ -6,30 +6,30 @@
 #funkcje-produktu-dodatkowe {
     display: flex;
     justify-content: center;
-    width: 65%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 
 }
 
 .ikony {
-    width: 10em;
+    width: 8em;
 }
 
 .ikona {
     text-align: center;
-    margin: 150px 10px 0px;
+    margin: 150px 10px 0;
     width: 250px;
-    height: 250px;
+    height: 180px;
 }
 
 .ikona-dodatkowe {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     width: 250px;
-    height: 250px;
+    height: 180px;
 }
 
 .opis {
