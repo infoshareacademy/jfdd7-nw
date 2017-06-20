@@ -1,10 +1,10 @@
-#o-nas {
+/*#o-nas {
     display: flex;
     justify-content: center;
 
-}
+}*/
 
-.osoba {
+/*.osoba {
     width: 250px;
     height: 250px;
 }
@@ -14,7 +14,6 @@
 }
 .tlo {
     border-top: 2px solid lightgrey;
-    background-image: url(../images/tlo-o-nas.png);
     width: 100%;
     height: 450px;
     margin-left: auto;
@@ -23,30 +22,33 @@
     justify-content: center;
     margin-top:100px;
     border-bottom: 2px solid lightgrey;
-}
-.zdjecie {
+}*/
+/*.zdjecie {
     margin: 150px 10px 0 10px;
     width: 250px;
     height: 250px;
 
-}
+}*/
 
-.o-mnie {
-
-    width: 250px;
+.about-us {
+    max-width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 2em;
     font-style: italic;
-    margin: 0 10px 100px 10px;
+    /*margin: 0 10px 100px 10px;*/
 
 }
 
-.o-mnie > a {
+.about-us > a {
     text-decoration: none;
 }
 
-.o-mnie > a > img {
+.about-us > a > img {
     width: 50px;
     margin-top: 5px;
 }
-
+/*To są nowe klasy*/
+#about-us {
+    background-color: lightgray;
+    padding: 10% 0;
+}
