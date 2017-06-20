@@ -67,20 +67,3 @@ h2 span {
 }
 
 
-.obrazek {
-    margin: 2em auto;
-    padding-top: 20%;
-}
-
-
-.text {
-    text-align: center;
-    padding: 0 2em 5em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.functions .obrazek {
-    max-width: 60%;
-}
