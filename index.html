@@ -85,19 +85,24 @@
 	</div>
 
 
-		<section id="formularz">
+		<section class="formularz container-fluid">
 
-			<fieldset>
+			<fieldset class="container">
 				<legend>
 
 				</legend>
-				<form action="">
-
-					<input class="mail" type="text" placeholder="Podaj swój e-mail">
-					<input class="przycisk" type="submit" value="wyślij"/>
+				<form>
+					<div class="form-group">
+						<label class="podaj-email col-sm-5"  for="exampleInputEmail1">Podaj swój e-mail:</label>
+						<div class="col-sm-offset-1 col-sm-10">
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					</div>
+						<div class="col-sm-offset-1 col-sm-10">
+						<button type="submit" class="btn btn-block">Wyślij</button>
+						</div>
+					</div>
 				</form>
-
-				<p>Wyślemy tylko jedną wiadomość.<br>
+				<p class="col-sm-offset-1 col-sm-10" >Wyślemy tylko jedną wiadomość.
 					Twój mail jest u nas bezpieczny.</p>
 
 
