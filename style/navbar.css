@@ -2,16 +2,43 @@
     position: fixed;
     z-index: 9000;
     width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 10px 0;
+}
+.navbar-brand {
+    padding: 0;
+}
+.navbar-brand>img {
+    /*float: left;*/
+    height: 60px;
+    margin-top: -10px;
+}
+.navbar-nav {
+    float: none;
+    display: flex;
+    /*justify-content: center;*/
+    justify-content: space-around;
+    padding-right: 107.14px;
 }
 .nav>li>a {
     font-size: 2em;
 }
-@media (min-width: 768px) {
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: floralwhite;
+    color: black;
+    transform: scale(1);
+}
+/*@media (min-width: 768px) {
     .navbar-right {
         float: none;
     !important;
-    }
-}
+    }*/
 
 /*header > nav > ul > li {*/
     /*padding-right: 30px;*/
