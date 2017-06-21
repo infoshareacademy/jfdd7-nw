@@ -3,15 +3,15 @@
     z-index: 9000;
     width: 100%;
 }
-
-}*/
-/*header > nav > ul {*/
-    /*text-decoration: none;*/
-    /*list-style-type: none;*/
-    /*text-align: center;*/
-    /*line-height: 47px;*/
-    /*margin: 0;*/
-/*}*/
+.nav>li>a {
+    font-size: 2em;
+}
+@media (min-width: 768px) {
+    .navbar-right {
+        float: none;
+    !important;
+    }
+}
 
 /*header > nav > ul > li {*/
     /*padding-right: 30px;*/
