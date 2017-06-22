@@ -1,14 +1,13 @@
 .intro {
     background-image: url(../images/zajawka.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    padding: 100px;
-    background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: top left;
+    max-width: 100% auto;
+    height: 100% auto;
+    padding: 5em;
     background-repeat: no-repeat;
     filter: sepia(50%);
 }
-
 h1 {
     text-shadow: 4px 4px #142608;
     margin-top: 50px;
@@ -16,24 +15,26 @@ h1 {
     color: white;
     font: bold 75px 'Didact Gothic', Sans-Serif;
     letter-spacing: -1px;
-
+    vertical-align: middle;
 }
 
-h1 span {
-    line-height: 1.52;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.45);
-    padding: 10px;
+h2 {
+    text-shadow: 2px 2px black;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font: bold 30px 'Didact Gothic' , Sans-Serif;
+    letter-spacing: -1px;
 
 }
-
 .button_newsletter {
-    width: 300px;
+    width: 25em;
     background: linear-gradient(to bottom, #8e8e8e, #202020);
     border: 2px solid black;
     /*border-radius:10px;*/
     padding: 10px;
-    margin: 100px auto;
+    margin: 5% auto;
     box-shadow: 0 5px 10px #373737;
 
 }
@@ -48,15 +49,12 @@ h1 span {
     padding:5px;
 }
 
-h2 {
-    text-shadow: 2px 2px black;
-    margin-top: 70px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: white;
-    font: bold 30px 'Didact Gothic' , Sans-Serif;
-    letter-spacing: -1px;
-
+h1 span {
+    line-height: 1.52;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.45);
+    padding: 10px;
+    vertical-align: middle;
 }
 
 h2 span {
@@ -66,4 +64,146 @@ h2 span {
     padding: 10px;
 }
 
+@media screen and (max-width: 991px){
 
+    .wrapper h1 span{
+        text-shadow: 3px 3px #142608;
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        font: bold 45px 'Didact Gothic', Sans-Serif;
+        letter-spacing: -1px;
+        vertical-align: middle;
+    }
+    .wrapper h2 span{
+        text-shadow: 3px 3px #142608;
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        font: bold 25px 'Didact Gothic', Sans-Serif;
+        letter-spacing: -1px;
+        vertical-align: middle;
+    }
+    .button_newsletter {
+        text-align: center;
+        width: 20em;
+        background: linear-gradient(to bottom, #8e8e8e, #202020);
+        border: 2px solid black;
+        /*border-radius:10px;*/
+        padding: 10px;
+        margin-top: 55px;
+        box-shadow: 0 4px 8px #373737;
+    }
+    .button_newsletter_text{
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+        padding:3px;
+    }
+}
+
+@media screen and (max-width: 779px){
+    .wrapper h1 {
+        text-shadow: 1px 1px #142608;
+        margin-top: 20px;
+        color: white;
+        font: bold 25px 'Didact Gothic', Sans-Serif;
+        letter-spacing: 1px;
+        vertical-align: middle;
+    }
+    .wrapper h2 {
+        text-shadow: 1px 1px #142608;
+        margin: 30px: center;
+        color: white;
+        font: bold 15px 'Didact Gothic', Sans-Serif;
+        letter-spacing: 1px;
+        vertical-align: middle;
+    }
+    .button_newsletter {
+        width: 15em;
+        background: linear-gradient(to bottom, #8e8e8e, #202020);
+        border: 1px solid black;
+        /*border-radius:10px;*/
+        padding: 5px;
+        margin-top: 45px;
+        box-shadow: 0 2px 4px #373737;
+    }
+    .button_newsletter_text {
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+        padding:2px;
+    }
+    .wrapper h1 span {
+        line-height: 0.7;
+        padding: 5px;
+        vertical-align: middle;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .wrapper h2 span{
+        line-height: 0.5;
+        padding: 15px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .wrapper h1 {
+        text-shadow: 1px 1px #142608;
+        margin-top: 20px;
+        color: white;
+        font: bold 25px 'Didact Gothic', Sans-Serif;
+        letter-spacing: 1px;
+        vertical-align: middle;
+    }
+    .wrapper h2 {
+        text-shadow: 1px 1px #142608;
+        margin: 30px: center;
+        color: white;
+        font: bold 15px 'Didact Gothic', Sans-Serif;
+        letter-spacing: 1px;
+        vertical-align: middle;
+    }
+    .button_newsletter {
+        width: 15em;
+        background: linear-gradient(to bottom, #8e8e8e, #202020);
+        border: 1px solid black;
+        /*border-radius:10px;*/
+        padding: 5px;
+        margin-top: 45px;
+        box-shadow: 0 2px 4px #373737;
+    }
+    .button_newsletter_text {
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+        padding:2px;
+    }
+    .wrapper h1 span {
+        line-height: 0.3;
+        padding: 3px;
+        vertical-align: middle;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .wrapper h2 span{
+        display:none;
+        line-height: 0.5;
+        padding: 15px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0);
+    }
+}
