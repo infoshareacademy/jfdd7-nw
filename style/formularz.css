@@ -35,12 +35,6 @@ main > section > fieldset > legend {
     margin-top: 20px;
 }
 
-/*main > section > fieldset > form {*/
-    /*margin-top: 35px;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-/*}*/
-
 
 main > section > fieldset > p {
     color: white;
