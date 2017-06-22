@@ -1,12 +1,11 @@
 main > section > fieldset {
-    width: 500px;
+    max-width: 600px;
     border-radius: 6%;
     border: 0px;
-    height: 400px;
+    max-height: 400px;
     background: linear-gradient(to bottom, #8e8e8e, #2b3042);
     box-shadow: 0 5px 10px black;
     margin-bottom: 50px;
-    ustify-content: ;
 }
 
 main > section > fieldset > legend {
@@ -26,50 +25,24 @@ main > section > fieldset > legend {
     border-radius: 50%;
 }
 
-#formularz {
-    padding: 100px;
-    display: flex;
-    justify-content: center;
+.formularz {
+    /*padding: 100px;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
     background-image: url(../images/tlo-o-nas2.png);
     border-bottom: 2px solid lightgrey;
     border-top: 2px solid lightgrey;
     margin-top: 20px;
 }
 
-main > section > fieldset > form {
-    margin-top: 35px;
-    display: flex;
-    justify-content: center;
-}
-
-.mail {
-    height: 50px;
-    text-align: center;
-    font-size: 28px;
-}
-
-.przycisk {
-    margin-left: 8px;
-    width: 100px;
-    font-size: larger;
-    background-color: white;
-    color: #2B3042;
-    font-weight: bold;
-}
-
-.przycisk:hover {
-
-    background-color: #2B3042;
-    color: white;
-    border: 0 grey;
-}
-
-.przycisk:visited {
-    border: 0;
-}
 
 main > section > fieldset > p {
     color: white;
     text-shadow: 2px 2px black;
     margin: 70px 0 0 16px;
+    text-align: center;
+}
+.podaj-email{
+    color: white;
+    text-align: center;
 }
