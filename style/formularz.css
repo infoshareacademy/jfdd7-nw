@@ -41,6 +41,8 @@ main > section > fieldset > p {
     text-shadow: 2px 2px black;
     margin: 70px 0 0 16px;
     text-align: center;
+    font-size: 1.3em;
+    vertical-align: middle;
 }
 .podaj-email{
     color: white;
