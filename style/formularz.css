@@ -33,6 +33,7 @@ main > section > fieldset > legend {
     border-bottom: 2px solid lightgrey;
     border-top: 2px solid lightgrey;
     margin-top: 20px;
+    padding: 5% 0;
 }
 
 
