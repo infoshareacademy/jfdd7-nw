@@ -13,9 +13,16 @@
 }
 
 .social-media {
-    display: block;
-    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    padding:  1em 0;
     color: white;
+}
+
+.znajdz {
+    padding: 2em 0 0;
+    color: white;
+    font-size: 15px;
 }
 
 .size:hover {
@@ -24,6 +31,7 @@
 
 .biznes a {
     color: white;
+    text-shadow: 1px 1px black;
 }
 
 .biznes a:hover {
@@ -36,6 +44,9 @@
     color: white;
 }
 
+.size {
+    width: 48px;
+}
 
 .hvr-underline-from-left {
     display: inline-block;
@@ -67,20 +78,23 @@
 }
 
 
-
-
-@media (max-width: 799px) {
+@media (max-device-width: 799px) {
     .biznes a {
         display: block;
         width: 50%;
-        padding: .5em 0;
+        padding: 1.5em 0 3em 0;
+    }
+    .social-media  {
+        display: flex;
+        justify-content: space-around;
+
     }
 
 
 }
 
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .biznes {
         display: flex;
         justify-content: space-between;
