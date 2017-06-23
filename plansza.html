@@ -26,10 +26,33 @@
 		background-color: black;
 	}
 
+	.szaszlyk {
+		width: 50%;
+		height: 800px;
+		border: 1px solid black;
+		padding: 10px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	#game-board > div {
+		display: flex;
+		align-content: stretch;
+		margin-top: 10px;
+	}
+	#game-board > div > div {
+		height: 40px;
+		border: 1px solid #000;
+		flex-grow: 1;
+
+	}
+
 </style>
-
-<table id="game-board" class="game-table" cellspacing="0"></table>
-
+<div class="szaszlyk">
+	<div id="game-board" class="game-table" cellspacing="0"></div>
+</div>
 <script>
     var table = document.querySelector('#game-board');
 
@@ -40,12 +63,13 @@
 //        event.target.classList.add('clicked');
 //    });
 
-    function createTape(speed) {
-        var tr = document.createElement('tr');
+    function createTape(initialSpeed) {
+        var speed = initialSpeed;
+        var tr = document.createElement('div');
         var td;
 
-        for (var i = 0; i < 20; i += 1) {
-            td = document.createElement('td');
+        for (var i = 0; i < 15; i += 1) {
+            td = document.createElement('div');
             tr.appendChild(td);
         }
 
@@ -62,26 +86,27 @@
 
         function tick() {
             currentTick += 1;
-            var lastCell = tr.querySelector('td:last-child');
+            var lastCell = tr.querySelector('div:last-child');
 
             tr.prepend(lastCell);
 
             if (products.length > 0 && Math.random() > 0.5) {
                 var product = products.shift();
-                var start = tr.querySelector('td');
+                var start = tr.querySelector('div');
                 start.classList.add(product);
 //            console.log(products);
             }
-	        speed = Math.max(200, currentTick % 5 === 0 ? speed * 0.99 : speed);
+            speed = Math.max(100, currentTick % 5 === 0 ? speed * 0.99 : speed);
+
             setTimeout(tick, speed)
         }
 
         setTimeout(tick, speed);
     }
 
-    createTape(200);
-    createTape(500);
-    createTape(10);
-    createTape(40);
-    createTape(60);
+
+    createTape(1000);
+    createTape(1200);
+    createTape(758);
+
 </script>
