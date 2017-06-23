@@ -33,10 +33,12 @@
 <script>
     var table = document.querySelector('#game-board');
 
-    table.addEventListener('click', function (event) {
-        console.log('td clicked', event.target);
-        event.target.classList.add('clicked');
-    });
+//    PO KLIKNIĘCIU WYKONAJ AKCJĘ:
+
+//    table.addEventListener('click', function (event) {
+//        console.log('td clicked', event.target);
+//        event.target.classList.add('clicked');
+//    });
 
     function createTape(speed) {
         var tr = document.createElement('tr');
@@ -56,24 +58,25 @@
             products.push(productTypes[Math.floor(Math.random() * 3)])
         }
 
+        var currentTick = 0;
 
-
-        var intervalId = setInterval(function () {
-
-
+        function tick() {
+            currentTick += 1;
             var lastCell = tr.querySelector('td:last-child');
 
             tr.prepend(lastCell);
 
-            if (products.length > 0 && Math.random() > 0.2) {
+            if (products.length > 0 && Math.random() > 0.5) {
                 var product = products.shift();
                 var start = tr.querySelector('td');
                 start.classList.add(product);
 //            console.log(products);
             }
+	        speed = Math.max(200, currentTick % 5 === 0 ? speed * 0.99 : speed);
+            setTimeout(tick, speed)
+        }
 
-
-        }, speed);
+        setTimeout(tick, speed);
     }
 
     createTape(200);
