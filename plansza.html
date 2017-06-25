@@ -11,7 +11,7 @@
 	}
 
 	.clicked {
-		background-color: blue;
+		background-color: blue !important;
 	}
 
 	.a {
@@ -76,10 +76,7 @@
     var productTypes = ['a', 'b', 'c'];
 //    PO KLIKNIĘCIU WYKONAJ AKCJĘ:
 
-//    table.addEventListener('click', function (event) {
-//        console.log('td clicked', event.target);
-//        event.target.classList.add('clicked');
-//    });
+
 
     function createList() {
         var listToGet = document.createElement('div');
@@ -150,5 +147,10 @@
     createTape(1000);
     createTape(1200);
     createTape(758);
+
+    table.addEventListener('click', function (event) {
+        event.target.classList.add('clicked');
+        event.target.classList.remove();
+    });
 
 </script>
