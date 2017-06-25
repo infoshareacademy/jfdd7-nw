@@ -49,19 +49,63 @@
 
 	}
 
+	#aim > div {
+		display: flex;
+		align-content: stretch;
+		border: solid 1px black;
+	}
+
+	#aim{
+		width: 100%;
+		height: 100px;
+		border: solid 1px black;
+	}
+	#aim > div > div {
+		height: 40px;
+		border: 1px solid #000;
+		flex-grow: 1;
+	}
 </style>
 <div class="szaszlyk">
-	<div id="game-board" class="game-table" cellspacing="0"></div>
+	<div id="aim"></div>
+	<div id="game-board" class="game-table"></div>
 </div>
 <script>
     var table = document.querySelector('#game-board');
-
+	var aims = document.querySelector('#aim');
+    var productTypes = ['a', 'b', 'c'];
 //    PO KLIKNIĘCIU WYKONAJ AKCJĘ:
 
 //    table.addEventListener('click', function (event) {
 //        console.log('td clicked', event.target);
 //        event.target.classList.add('clicked');
 //    });
+
+    function createList() {
+        var listToGet = document.createElement('div');
+        var productToGet;
+
+        for (var i = 0; i < 3; i += 1) {
+            productToGet = document.createElement('div');
+            listToGet.appendChild(productToGet);
+        }
+        aims.appendChild(listToGet);
+
+        var productsToGet = [];
+        for (var i = 0; i < 3; i += 1) {
+            productsToGet.push(productTypes[Math.floor(Math.random() * 3)])
+        }
+        if (productsToGet.length > 0) {
+            var productGet = productsToGet.shift();
+            var start = listToGet.querySelector('div');
+            start.classList.add(productGet);
+        }
+
+    }
+
+
+
+
 
     function createTape(initialSpeed) {
         var speed = initialSpeed;
@@ -76,7 +120,6 @@
         table.appendChild(tr);
 
 
-        var productTypes = ['a', 'b', 'c'];
         var products = [];
         for (var i = 0; i < 10; i += 1) {
             products.push(productTypes[Math.floor(Math.random() * 3)])
@@ -94,7 +137,6 @@
                 var product = products.shift();
                 var start = tr.querySelector('div');
                 start.classList.add(product);
-//            console.log(products);
             }
             speed = Math.max(100, currentTick % 5 === 0 ? speed * 0.99 : speed);
 
@@ -104,7 +146,7 @@
         setTimeout(tick, speed);
     }
 
-
+	createList();
     createTape(1000);
     createTape(1200);
     createTape(758);
