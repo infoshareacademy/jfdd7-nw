@@ -26,7 +26,13 @@
     color: black;
     transform: scale(1);
 }
+.navbar-default .navbar-toggle {
+    margin-right: 28px;
+}
 @media (min-width: 768px) {
+    .my-navbar {
+        display: block;
+    }
     .navbar-nav {
         float: none;
         display: flex;
