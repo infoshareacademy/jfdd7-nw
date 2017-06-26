@@ -11,7 +11,7 @@
 	}
 
 	.clicked {
-		background-color: blue !important;
+		background-color: blue ;
 	}
 
 	.a {
@@ -74,6 +74,7 @@
     var table = document.querySelector('#game-board');
 	var aims = document.querySelector('#aim');
     var productTypes = ['a', 'b', 'c'];
+
 //    PO KLIKNIĘCIU WYKONAJ AKCJĘ:
 
 
@@ -82,21 +83,13 @@
         var listToGet = document.createElement('div');
         var productToGet;
 
-        for (var i = 0; i < 3; i += 1) {
+        for (var i = 0; i < 8; i += 1) {
             productToGet = document.createElement('div');
+            productToGet.classList.add(productTypes[Math.floor(Math.random() * 3)]);
             listToGet.appendChild(productToGet);
         }
         aims.appendChild(listToGet);
 
-        var productsToGet = [];
-        for (var i = 0; i < 3; i += 1) {
-            productsToGet.push(productTypes[Math.floor(Math.random() * 3)])
-        }
-        if (productsToGet.length > 0) {
-            var productGet = productsToGet.shift();
-            var start = listToGet.querySelector('div');
-            start.classList.add(productGet);
-        }
 
     }
 
@@ -108,7 +101,7 @@
         var speed = initialSpeed;
         var tr = document.createElement('div');
         var td;
-
+        var products = [];
         for (var i = 0; i < 15; i += 1) {
             td = document.createElement('div');
             tr.appendChild(td);
@@ -117,7 +110,7 @@
         table.appendChild(tr);
 
 
-        var products = [];
+
         for (var i = 0; i < 10; i += 1) {
             products.push(productTypes[Math.floor(Math.random() * 3)])
         }
@@ -141,6 +134,14 @@
         }
 
         setTimeout(tick, speed);
+        tr.addEventListener('click', function (event) {
+
+            if (event.target.className === '') {
+                return;
+            }
+            event.target.className = '';
+            products.push(productTypes[Math.floor(Math.random() * 3)]);
+        });
     }
 
 	createList();
@@ -148,9 +149,6 @@
     createTape(1200);
     createTape(758);
 
-    table.addEventListener('click', function (event) {
-        event.target.classList.add('clicked');
-        event.target.classList.remove();
-    });
+
 
 </script>
