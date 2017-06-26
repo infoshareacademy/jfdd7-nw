@@ -34,6 +34,9 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		background-image: url("images/game-background.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
 
 	}
 
@@ -69,21 +72,22 @@
 <div class="szaszlyk">
 	<div id="aim"></div>
 	<div id="game-board" class="game-table"></div>
+	<div id="score" class="score"></div>
 </div>
 <script>
     var table = document.querySelector('#game-board');
 	var aims = document.querySelector('#aim');
+	var score = document.querySelector('#score');
     var productTypes = ['a', 'b', 'c'];
-
-//    PO KLIKNIĘCIU WYKONAJ AKCJĘ:
-
+    var productToGet;
+    var points = 0;
 
 
     function createList() {
         var listToGet = document.createElement('div');
-        var productToGet;
 
-        for (var i = 0; i < 8; i += 1) {
+
+        for (var i = 0; i < 3; i += 1) {
             productToGet = document.createElement('div');
             productToGet.classList.add(productTypes[Math.floor(Math.random() * 3)]);
             listToGet.appendChild(productToGet);
@@ -139,8 +143,16 @@
             if (event.target.className === '') {
                 return;
             }
+            var hit = aims.querySelector('.' + event.target.className);
+            if (hit !== undefined){
+                hit.className = '';
+                points += 1;
+				score.innerText = points
+            }
             event.target.className = '';
             products.push(productTypes[Math.floor(Math.random() * 3)]);
+
+
         });
     }
 
