@@ -17,7 +17,7 @@
     <title>Zakupowy pomocnik!</title>
 
 </head>
-<body id="home">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <header>
     <nav class="navbar navbar-default">
@@ -32,9 +32,9 @@
                 </button>
                 <a class="navbar-brand" href="#"><img src="images/logo_navbar.png"/></a>
             </div>
-            <div id="navbar">
+            <div id="navbar" class="collapse my-navbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#zajawka">Home</a></li>
                     <li><a href="#funkcje-produktu">Funkcje</a></li>
                     <li><a href="#formularz">Zapisz się!</a></li>
                     <li><a href="#about-us">O nas</a></li>
@@ -42,14 +42,12 @@
             </div>
         </div>
     </nav>
-
 </header>
+<main>
+    <section id="zajawka" class="intro">
 
-    <main>
-      <section id="zajawka" class="intro">
 
-
-		<div class="wrapper">
+        <div class="wrapper">
 
             <h1><span>Pomocnik Zakupowy</span></h1>
 
@@ -57,105 +55,94 @@
             </h2>
 
 
-		<div class="button_newsletter" align="mid">
+            <div class="button_newsletter" align="mid">
 
-            <a href="#formularz" style="text-decoration:none">
+                <a href="#formularz" style="text-decoration:none">
 
-				<span class="button_newsletter_text">Zapisz się już dziś!</span></a>
-            <span id="funkcje-produktu"></span>
-		</div>
+                    <span class="button_newsletter_text">Zapisz się już dziś!</span></a>
+            </div>
         </div>
-
-
-	</section>
-<
-
-        <div class="container functions" >
+    </section>
+    <section id="funkcje-produktu">
+        <div class="container functions">
             <div class="row">
                 <div class="col-md-3  col-sm-6">
                     <img class="img-responsive obrazek" src="images/cena1.png" alt="wyszukiwarka najtańszych ofert"
                          title="wyszukiwarka najtańszych ofert"/>
-                    <p class="text">Wyszukiwarka najtańszych ofert - znajdź najlepszą cenę <br/> w sieci! Za pomocą naszych narzędzi wyszukiwania!</p>
+                    <p class="text">Wyszukiwarka najtańszych ofert - znajdź najlepszą cenę <br/> w sieci! Za pomocą
+                        naszych
+                        narzędzi wyszukiwania!</p>
                 </div>
-
                 <div class="col-md-3  col-sm-6">
                     <img class="img-responsive obrazek" src="images/produkt.png" alt="produkty bliżej Ciebie"
                          title="produkty bliżej Ciebie"/>
-                    <p class="text">Znajdź poszukiwany produkt jak najbliżej siebie! W naszej ofercie znajdują się najwieksze już marki na rynku!</p>
+                    <p class="text">Znajdź poszukiwany produkt jak najbliżej siebie! W naszej ofercie znajdują się
+                        najwieksze już marki na rynku!</p>
                 </div>
-
                 <div class="col-md-3  col-sm-6">
                     <img class="img-responsive obrazek" src="images/porownanie.png" alt="porównywarka produktów"
                          title="porównywarka produktów"/>
-                    <p class="text">Porównaj wybrane produkty - wybierz najlepszy produkt który spełni twoje wszelkie oczekiwania!</p>
+                    <p class="text">Porównaj wybrane produkty - wybierz najlepszy produkt który spełni twoje wszelkie
+                        oczekiwania!</p>
                 </div>
-
                 <div class="col-md-3  col-sm-6">
                     <img class="img-responsive obrazek" src="images/dostawa.png" alt="najszybsza dostawa"
                          title="najszybsza dostawa"/>
-                    <p class="text">Jednym kliknięciem sprawdź najszybszą dostawę! W najlepszej cenie oraz czasie dostawy!</p>
-                </div>
-
-        </div>
-    </div>
-
-
-		<section id="formularz" class="formularz container-fluid" >
-
-			<fieldset class="container">
-				<legend>
-
-				</legend>
-				<form action="https://formspree.io/teamniewiem@gmail.com" method="POST">>
-					<div class="form-group">
-						<label class="podaj-email col-sm-5"  for="exampleInputEmail1">Podaj swój e-mail:</label>
-						<div class="col-sm-offset-1 col-sm-10">
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-					</div>
-						<div class="col-sm-offset-1 col-sm-10">
-						<button type="submit" class="btn btn-block">Wyślij</button>
-						</div>
-					</div>
-				</form>
-				<p class="col-sm-offset-1 col-sm-10" >Wyślemy jedną wiadomość.
-					Twój e-mail jest bezpieczny.</p>
-
-
-        </fieldset>
-    </section>
-
-
-        <section id="funkcje-produktu1">
-
-            <div class="container functions">
-
-                <div class="col-sm-offset-1 col-sm-5">
-                    <img class="img-responsive obrazek" src="images/powiadomienia.png" alt="bądź na bieżąco z najniższymi cenami" title="bądź na bieżąco z najniższymi cenami"/>
-                    <p class="text">Bądź na bieżąco z wybranymi przez Ciebie produktami - czekasz na dobrą promocję? Poinformujemy Cię o niej!
-                    </p>
-                </div>
-
-                <div class="col-sm-5">
-                    <img class="img-responsive obrazek" src="images/lokalizacja.png" alt="funkcja wyznaczania trasy" title="funkcja wyznaczania trasy"/>
-                    <p class="text">Wybierz sklep a wyznaczymy za Ciebie najlepszą trasę! Samochód, komunikacja miejska a może pieszo ? Żaden problem !</p></div>
-
-                <div class="col-sm-offset-1 col-sm-5">
-                    <img class="img-responsive obrazek" src="images/baza.png" alt="kategorie produktów" title="kategorie produktów"/>
-                    <p class="text">Stale powiększana baza produktów. Prezent urodzinowy lub na rocznicę - a może coś dla zwierzaka ?
-                        Znajdź poszukiwany przedmiot w wybranych kategoriach!</p>
-                </div>
-
-                <div class="col-sm-5">
-                    <img class="img-responsive obrazek" src="images/miejsce.png" alt="wybierz dowolne miejsce odbioru" title="wybierz dowolne miejsce odbioru"/>
-                    <p class="text">Dopełnimy wszelkich starań by Twoja przesyłka dotarła tam gdzie tego chcesz! Praca, dom a może jezioro?</p>
+                    <p class="text">Jednym kliknięciem sprawdź najszybszą dostawę! W najlepszej cenie oraz czasie
+                        dostawy!</p>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="formularz" class="formularz container-fluid">
+        <fieldset class="container">
+            <legend>
 
-
-
-        </section>
-
-
+            </legend>
+            <form action="https://formspree.io/teamniewiem@gmail.com" method="POST">>
+                <div class="form-group">
+                    <label class="podaj-email col-sm-5" for="exampleInputEmail1">Podaj swój e-mail:</label>
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <button type="submit" class="btn btn-block">Wyślij</button>
+                    </div>
+                </div>
+            </form>
+            <p class="col-sm-offset-1 col-sm-10">Wyślemy jedną wiadomość.
+                Twój e-mail jest bezpieczny.</p>
+        </fieldset>
+    </section>
+    <section id="funkcje-produktu1">
+        <div class="container functions">
+            <div class="col-sm-offset-1 col-sm-5">
+                <img class="img-responsive obrazek" src="images/powiadomienia.png"
+                     alt="bądź na bieżąco z najniższymi cenami" title="bądź na bieżąco z najniższymi cenami"/>
+                <p class="text">Bądź na bieżąco z wybranymi przez Ciebie produktami - czekasz na dobrą promocję?
+                    Poinformujemy Cię o niej!
+                </p>
+            </div>
+            <div class="col-sm-5">
+                <img class="img-responsive obrazek" src="images/lokalizacja.png" alt="funkcja wyznaczania trasy"
+                     title="funkcja wyznaczania trasy"/>
+                <p class="text">Wybierz sklep a wyznaczymy za Ciebie najlepszą trasę! Samochód, komunikacja miejska a
+                    może pieszo ? Żaden problem !</p></div>
+            <div class="col-sm-offset-1 col-sm-5">
+                <img class="img-responsive obrazek" src="images/baza.png" alt="kategorie produktów"
+                     title="kategorie produktów"/>
+                <p class="text">Stale powiększana baza produktów. Prezent urodzinowy lub na rocznicę - a może coś dla
+                    zwierzaka ?
+                    Znajdź poszukiwany przedmiot w wybranych kategoriach!</p>
+            </div>
+            <div class="col-sm-5">
+                <img class="img-responsive obrazek" src="images/miejsce.png" alt="wybierz dowolne miejsce odbioru"
+                     title="wybierz dowolne miejsce odbioru"/>
+                <p class="text">Dopełnimy wszelkich starań by Twoja przesyłka dotarła tam gdzie tego chcesz! Praca, dom
+                    a może jezioro?</p>
+            </div>
+        </div>
+    </section>
     <section id="about-us">
         <div class="container">
             <div class="row">
@@ -167,7 +154,6 @@
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
                 </div>
-
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="img-responsive center-block" src="images/osoba.png">
                     <article class="about-us">
@@ -176,7 +162,6 @@
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
                 </div>
-
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="img-responsive center-block" src="images/osoba.png">
                     <article class="about-us">
@@ -185,7 +170,6 @@
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
                 </div>
-
                 <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-6 text-center">
                     <img class="img-responsive center-block" src="images/osoba.png">
                     <article class="about-us">
@@ -193,48 +177,36 @@
                         <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
-
-             </div>
+                </div>
             </div>
+        </div>
     </section>
-
-        <footer class="footer">
-
-
-
-            <div class="container">
-                <div class="col-sm-12 text-center biznes">
-                    <a class="col-xs-6 hvr-underline-from-left" href="#">Reklama w serwisie</a>
-                    <a class="col-xs-6 hvr-underline-from-left" href="#">Polityka prywatności</a>
-                    <a class="col-xs-6 hvr-underline-from-left" href="#">Regulamin serwisu</a>
-                    <a class="col-xs-6 hvr-underline-from-left" href="#">Kontakt</a>
-                </div>
-
-                <p class="col-xs-12 text-center znajdz">Znajdziesz nas na:</p>
-
-                <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4 text-center social-media img-responsive">
-
-                    <a href="http://www.facebook.com" target="_blank"><img class="text-center size" src="images/footer/fb.svg"/></a>
-                    <a href="https://plus.google.com" target="_blank"><img class="text-center size" src="images/footer/google.svg"/></a>
-                    <a href="http://www.twitter.com" target="_blank"><img  class="text-center size" src="images/footer/twitter.svg"/></a>
-                    <a href="http://www.youtube.com" target="_blank"><img  class="text-center size" src="images/footer/youtube.svg" /></a>
-
-                </div>
-
-
-                <div class="col-xs-12 text-center">
-                    <span class="prawa">2017 © Nie Wiem Team - imie nazwisko / imie nazwisko / imie nazwisko / imie nazwisko. Wszelkie prawa zastrzeżone. </span>
-                </div>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="col-sm-12 text-center biznes">
+                <a class="col-xs-6 hvr-underline-from-left" href="#">Reklama w serwisie</a>
+                <a class="col-xs-6 hvr-underline-from-left" href="#">Polityka prywatności</a>
+                <a class="col-xs-6 hvr-underline-from-left" href="#">Regulamin serwisu</a>
+                <a class="col-xs-6 hvr-underline-from-left" href="#">Kontakt</a>
             </div>
+            <p class="col-xs-12 text-center znajdz">Znajdziesz nas na:</p>
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4 text-center social-media img-responsive">
 
-
-        </footer>
-
-
-    </main>
+                <a href="http://www.facebook.com" target="_blank"><img class="text-center size"
+                                                                       src="images/footer/fb.svg"/></a>
+                <a href="https://plus.google.com" target="_blank"><img class="text-center size"
+                                                                       src="images/footer/google.svg"/></a>
+                <a href="http://www.twitter.com" target="_blank"><img class="text-center size"
+                                                                      src="images/footer/twitter.svg"/></a>
+                <a href="http://www.youtube.com" target="_blank"><img class="text-center size"
+                                                                      src="images/footer/youtube.svg"/></a>
+            </div>
+            <div class="col-xs-12 text-center">
+                <span class="prawa">2017 © Nie Wiem Team - imie nazwisko / imie nazwisko / imie nazwisko / imie nazwisko. Wszelkie prawa zastrzeżone. </span>
+            </div>
+        </div>
+    </footer>
 </main>
-
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
 </body>
