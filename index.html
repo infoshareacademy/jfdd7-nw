@@ -57,7 +57,7 @@
                 var scrollY = window.scrollY;
                 paralaxOne.style.backgroundPositionY = (scrollY / 10 ) + 'px';
                 paralaxTwo.style.top = ( scrollY / 2 ) + 'px';
-                paralaxThree.style.top = ( scrollY / 3 ) + 'px';
+                paralaxThree.style.top = ( scrollY / 4 ) + 'px';
                 paralaxFour.style.top = ( scrollY / 4 ) + 'px';
 
             });
@@ -116,8 +116,8 @@
             </div>
         </div>
     </section>
-         <button type="button" class="btn" data-toggle="collapse" data-target="#demo">Więcej funkcji</button>
-    <section id="demo" class="collapse">
+        <div id="slide-toogle">Naciśnij żeby rozwinąć lub zwinąć</div>
+    <section id="extended-functions" style="display: none">
         <div class="container functions">
             <div class="col-sm-offset-1 col-sm-5">
                 <img class="img-responsive obrazek" src="images/powiadomienia.png"
@@ -233,14 +233,11 @@
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $("#demo").on("hide.bs.collapse", function(){
-            $(".btn").html('Więcej funkcji');
-        });
-        $("#demo").on("show.bs.collapse", function(){
-            $(".btn").html('Mniej funkcji');
-        });
+$(document).ready(function(){
+    $("#slide-toogle").click(function(){
+        $("#extended-functions").slideToggle();
     });
+});
 </script>
 </body>
 </html>
