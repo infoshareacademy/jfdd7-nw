@@ -1,17 +1,14 @@
 .footer {
+    background-image: url("../images/tlo-o-nas2.png");
     padding: 2em 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    /*background: rgba(0, 0, 0, 0.6);*/
     min-height: 10em;
-
 }
-
 .biznes {
     font-size: 1.5em;
 }
-
-
 .social-media {
     display: flex;
     justify-content: space-around;
@@ -19,36 +16,29 @@
     color: white;
     max-width: 100%;
 }
-
 .znajdz {
     padding: 2em 0 0;
     color: white;
     font-size: 15px;
 }
-
 .size:hover {
     opacity: 0.8;
 }
-
 .biznes a {
     color: white;
     text-shadow: 1px 1px black;
 }
-
 .biznes a:hover {
     color: black;
     text-decoration: none;
     font-weight: bold;
 }
-
 .prawa {
     color: white;
 }
-
 .size {
     width: 48px;
 }
-
 .hvr-underline-from-left {
     display: inline-block;
     vertical-align: middle;
@@ -77,8 +67,6 @@
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
     right: 0;
 }
-
-
 @media (max-device-width: 799px) {
     .biznes a {
         display: block;
@@ -88,13 +76,8 @@
     .social-media  {
         display: flex;
         justify-content: space-around;
-
     }
-
-
 }
-
-
 @media screen and (min-width: 800px) {
     .biznes {
         display: flex;
