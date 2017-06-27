@@ -52,26 +52,28 @@
                 var paralaxOne = document.querySelector('.parallax-one'),
                     paralaxTwo = document.querySelector('.parallax-two'),
                     paralaxThree = document.querySelector('.parallax-three');
+                    paralaxFour = document.querySelector('.parallax-Four');
 
                 var scrollY = window.scrollY;
-                paralaxOne.style.top = (scrollY / 1.5 ) + 'px';
+                paralaxOne.style.backgroundPositionY = (scrollY / 10 ) + 'px';
                 paralaxTwo.style.top = ( scrollY / 2 ) + 'px';
                 paralaxThree.style.top = ( scrollY / 3 ) + 'px';
+                paralaxFour.style.top = ( scrollY / 4 ) + 'px';
 
             });
         }())
     </script>
 
-    <section id="zajawka" class="intro">
+    <section id="zajawka" class="intro parallax-one">
 
         <div class="wrapper">
 
-            <h1><span class="parallax-layer parallax-one">Pomocnik Zakupowy</span></h1>
+            <h1><span class="parallax-layer parallax-two">Pomocnik Zakupowy</span></h1>
 
-            <h2><span class="parallax-layer parallax-two">Już wkrótce otwarcie nowego serwisu zakupowego. Zapraszamy do zapoznania się z funkcjami.</span>
+            <h2><span class="parallax-layer parallax-three">Już wkrótce otwarcie nowego serwisu zakupowego. Zapraszamy do zapoznania się z funkcjami.</span>
             </h2>
 
-            <div class="parallax-layer parallax-three">
+            <div class="parallax-layer parallax-four">
                 <div class="button_newsletter" align="mid">
 
                     <a href="#formularz" style="text-decoration:none">

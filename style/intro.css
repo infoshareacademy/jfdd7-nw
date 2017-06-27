@@ -1,7 +1,7 @@
 .intro {
     background-image: url(../images/zajawka.jpg);
     background-size: 100% auto;
-    background-position: top left;
+    background-position: 0 0;
     max-width: 100% auto;
     padding: 5em;
     background-repeat: no-repeat;
