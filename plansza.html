@@ -400,7 +400,7 @@
 
 
 
-        for (var i = 0; i < 10; i += 1) {
+        for (var i = 0; i < 50; i += 1) {
             products.push(productTypes[Math.floor(Math.random() * 36)])
         }
 
@@ -412,9 +412,10 @@
 
             tr.prepend(lastCell);
 
-            if (products.length > 0 && Math.random() > 0.5) {
+            if (tr.querySelectorAll('div:not([class])').length > 3 && products.length > 0 && Math.random() > 0.5) {
                 var product = products.shift();
                 var start = tr.querySelector('div');
+                start.className = '';
                 start.classList.add(product);
             }
             speed = Math.max(100, currentTick % 5 === 0 ? speed * 0.99 : speed);
@@ -429,7 +430,6 @@
                 return;
             }
             var hit = aims.querySelector('.' + event.target.className);
-            debugger
             if (hit !== null){
                 hit.className = '';
                 points += 1;
