@@ -44,25 +44,45 @@
     </nav>
 </header>
 <main>
-    <section id="zajawka" class="intro">
 
+    <script>
+        (function(){
+
+            window.addEventListener('scroll', function() {
+                var paralaxOne = document.querySelector('.parallax-one'),
+                    paralaxTwo = document.querySelector('.parallax-two'),
+                    paralaxThree = document.querySelector('.parallax-three');
+
+                var scrollY = window.scrollY;
+                paralaxOne.style.top = (scrollY / 1.5 ) + 'px';
+                paralaxTwo.style.top = ( scrollY / 2 ) + 'px';
+                paralaxThree.style.top = ( scrollY / 3 ) + 'px';
+
+            });
+        }())
+    </script>
+
+    <section id="zajawka" class="intro">
 
         <div class="wrapper">
 
-            <h1><span>Pomocnik Zakupowy</span></h1>
+            <h1><span class="parallax-layer parallax-one">Pomocnik Zakupowy</span></h1>
 
-            <h2><span>Już wkrótce otwarcie nowego serwisu zakupowego. Zapraszamy do zapoznania się z funkcjami.</span>
+            <h2><span class="parallax-layer parallax-two">Już wkrótce otwarcie nowego serwisu zakupowego. Zapraszamy do zapoznania się z funkcjami.</span>
             </h2>
 
+            <div class="parallax-layer parallax-three">
+                <div class="button_newsletter" align="mid">
 
-            <div class="button_newsletter" align="mid">
+                    <a href="#formularz" style="text-decoration:none">
 
-                <a href="#formularz" style="text-decoration:none">
-
-                    <span class="button_newsletter_text">Zapisz się już dziś!</span></a>
+                        <span class="button_newsletter_text">Zapisz się już dziś!</span></a>
+                </div>
             </div>
         </div>
+
     </section>
+
     <section id="funkcje-produktu">
         <div class="container functions">
             <div class="row">
