@@ -170,7 +170,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img class="img-responsive center-block" src="images/osoba.png">
+                    <div id="kontener">
+                    <div id="card">
+                        <img class="img-responsive center-block rotate" src="images/osoba.png">
+                        <img class="img-responsive center-block rotate2" src="images/osoba.png">
+                    </div>
+                    </div>
+
                     <article class="about-us">
                         Jarosław Michalski<br>
                         <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
@@ -240,6 +246,12 @@
         $("#demo").on("show.bs.collapse", function(){
             $(".btn").html('Mniej funkcji');
         });
+        $('#card').click(function() {
+            $(this).toggleClass('flipped')
+
+        });
+
+
     });
 </script>
 </body>

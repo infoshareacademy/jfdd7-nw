@@ -19,3 +19,37 @@
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     max-width: 263px;
 }
+
+
+#kontener {
+    position: relative;
+    perspective: 800px;
+}
+
+#card {
+
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#card img {
+    margin: 0 auto;
+    display: block;
+    backface-visibility: hidden;
+}
+
+#card .rotate {
+    background: red;
+}
+#card .rotate2 {
+    background: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotateY( 180deg );
+}
+
+#card.flipped {
+    transform: rotateY( 180deg );
+}
