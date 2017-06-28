@@ -151,7 +151,7 @@
             <legend>
 
             </legend>
-            <form action="https://formspree.io/teamniewiem@gmail.com" method="POST">>
+            <form action="https://formspree.io/teamniewiem@gmail.com" method="POST">
                 <div class="form-group">
                     <label class="podaj-email col-sm-5" for="exampleInputEmail1">Podaj swój e-mail:</label>
                     <div class="col-sm-offset-1 col-sm-10">
@@ -173,7 +173,7 @@
                     <div id="kontener">
                     <div id="card">
                         <img class="img-responsive center-block rotate" src="images/osoba.png">
-                        <img class="img-responsive center-block rotate2" src="images/osoba.png">
+                        <img class="img-responsive center-block rotate2" src="images/pic_marcin.png">
                     </div>
                     </div>
 
@@ -183,24 +183,48 @@
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
                 </div>
+
+
+
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                    <div id="kontener1">
+                        <div id="card1">
                     <img class="img-responsive center-block" src="images/osoba.png">
+                    <img class="img-responsive center-block rotate2" src="images/pic_marcin.png">
+                        </div>
+                    </div>
                     <article class="about-us">
                         Marcin Kopystyński<br>
                         <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
                 </div>
+
+
+
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                    <div id="kontener2">
+                        <div id="card2">
                     <img class="img-responsive center-block" src="images/osoba.png">
+                    <img class="img-responsive center-block rotate2" src="images/pic_marcin.png">
+                        </div>
+                    </div>
                     <article class="about-us">
                         Oskar Feliński<br>
                         <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
                 </div>
+
+
+
                 <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-6 text-center">
+                    <div id="kontener3">
+                        <div id="card3">
                     <img class="img-responsive center-block" src="images/osoba.png">
+                    <img class="img-responsive center-block rotate2" src="images/pic_mateusz.png">
+                        </div>
+                    </div>
                     <article class="about-us">
                         Mateusz Targowski<br>
                         <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
@@ -250,7 +274,18 @@
             $(this).toggleClass('flipped')
 
         });
+        $('#card1').click(function() {
+            $(this).toggleClass('flipped')
 
+        });
+        $('#card2').click(function() {
+            $(this).toggleClass('flipped')
+
+        });
+        $('#card3').click(function() {
+            $(this).toggleClass('flipped')
+
+        });
 
     });
 </script>
