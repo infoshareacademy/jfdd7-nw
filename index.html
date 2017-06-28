@@ -57,7 +57,7 @@
                 var scrollY = window.scrollY;
                 paralaxOne.style.backgroundPositionY = (scrollY / 10 ) + 'px';
                 paralaxTwo.style.top = ( scrollY / 2 ) + 'px';
-                paralaxThree.style.top = ( scrollY / 4 ) + 'px';
+                paralaxThree.style.top = ( scrollY / 3 ) + 'px';
                 paralaxFour.style.top = ( scrollY / 4 ) + 'px';
 
             });
@@ -116,7 +116,7 @@
             </div>
         </div>
     </section>
-        <div id="slide-toogle">Naciśnij żeby rozwinąć lub zwinąć</div>
+        <div id="slide-toogle">Naciśnij żeby rozwinąć</div>
     <section id="extended-functions" style="display: none">
         <div class="container functions">
             <div class="col-sm-offset-1 col-sm-5">
@@ -151,7 +151,7 @@
             <legend>
 
             </legend>
-            <form action="https://formspree.io/teamniewiem@gmail.com" method="POST">>
+            <form action="https://formspree.io/teamniewiem@gmail.com" method="POST">
                 <div class="form-group">
                     <label class="podaj-email col-sm-5" for="exampleInputEmail1">Podaj swój e-mail:</label>
                     <div class="col-sm-offset-1 col-sm-10">
@@ -233,11 +233,20 @@
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
 <script>
-$(document).ready(function(){
+$(function(){
     $("#slide-toogle").click(function(){
-        $("#extended-functions").slideToggle();
+
+        if ($('#extended-functions').css('display') == 'none') {
+            $("#slide-toogle").text('Naciśnij żeby zwinąć');
+            $("#extended-functions").slideDown();
+        }
+     else {
+            $("#extended-functions").slideUp();
+            $("#slide-toogle").text('Naciśnij żeby rozwinąć');
+        }
     });
 });
 </script>
 </body>
 </html>
+
