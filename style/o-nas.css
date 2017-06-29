@@ -12,10 +12,171 @@
     width: 50px;
     margin-top: 5px;
 }
+
+
+.about-us > a:hover {
+    opacity: .8;
+}
 #about-us {
     /*background-image: url("../images/tlo-o-nas2.png");*/
     padding: 10% 0;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     max-width: 263px;
+}
+
+/*pierwsza osoba - Jarek*/
+
+#kontener {
+    position: relative;
+    perspective: 800px;
+}
+
+#card {
+
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#card img {
+    margin: 0 auto;
+    display: block;
+    backface-visibility: hidden;
+}
+
+#card .rotate {
+    background: none;
+}
+#card .rotate2 {
+    border-radius: 100%;
+    background-size: contain;
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotateY( 180deg );
+    width: 100%;
+}
+
+#card.flipped {
+    transform: rotateY( 180deg );
+}
+
+
+/*druga osoba - Marcin*/
+
+
+#kontener1 {
+    position: relative;
+    perspective: 800px;
+}
+
+#card1 {
+
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#card1 img {
+    margin: 0 auto;
+    display: block;
+    backface-visibility: hidden;
+
+}
+
+#card1 .rotate {
+    background: none;
+}
+#card1 .rotate2 {
+    background-size: contain;
+    border-radius: 100%;
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotateY( 180deg );
+    width: 131%;
+}
+
+#card1.flipped {
+    transform: rotateY( 180deg );
+}
+
+
+/*trzecia osoba - Oskar*/
+
+
+#kontener2 {
+    position: relative;
+    perspective: 800px;
+}
+
+#card2 {
+
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#card2 img {
+    margin: 0 auto;
+    display: block;
+    backface-visibility: hidden;
+}
+
+#card2 .rotate {
+    background: none;
+}
+#card2 .rotate2 {
+    border-radius: 100%;
+    background-size: contain;
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotateY( 180deg );
+}
+
+#card2.flipped {
+    transform: rotateY( 180deg );
+}
+
+/*trzecia osoba - mateusz*/
+
+
+#kontener3 {
+    position: relative;
+    perspective: 800px;
+}
+
+#card3 {
+
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#card3 img {
+    margin: 0 auto;
+    display: block;
+    backface-visibility: hidden;
+}
+
+#card3 .rotate {
+    background: none;
+}
+#card3 .rotate2 {
+    border: 2px solid black;
+    border-radius: 100%;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotateY( 180deg );
+}
+
+#card3.flipped {
+    transform: rotateY( 180deg );
 }

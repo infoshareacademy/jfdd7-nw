@@ -170,7 +170,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img class="img-responsive center-block" src="images/osoba.png">
+                    <div id="kontener">
+                    <div id="card">
+                        <img class="img-responsive center-block rotate" src="images/osoba.png">
+                        <img class="img-responsive center-block rotate2" src="images/pic_marcin.png">
+                    </div>
+                    </div>
+
                     <article class="about-us">
                         Jarosław Michalski<br>
                         <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
@@ -178,7 +184,12 @@
                     </article>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                    <div id="kontener1">
+                        <div id="card1">
                     <img class="img-responsive center-block" src="images/osoba.png">
+                    <img class="img-responsive center-block rotate2" src="images/pic_marcin.png">
+                        </div>
+                    </div>
                     <article class="about-us">
                         Marcin Kopystyński<br>
                         <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
@@ -186,7 +197,12 @@
                     </article>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                    <div id="kontener2">
+                        <div id="card2">
                     <img class="img-responsive center-block" src="images/osoba.png">
+                    <img class="img-responsive center-block rotate2" src="images/pic_oskar.jpg">
+                        </div>
+                    </div>
                     <article class="about-us">
                         Oskar Feliński<br>
                         <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
@@ -194,7 +210,12 @@
                     </article>
                 </div>
                 <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-6 text-center">
+                    <div id="kontener3">
+                        <div id="card3">
                     <img class="img-responsive center-block" src="images/osoba.png">
+                    <img class="img-responsive center-block rotate2" src="images/pic_mateusz.png">
+                        </div>
+                    </div>
                     <article class="about-us">
                         Mateusz Targowski<br>
                         <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
@@ -233,6 +254,31 @@
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
 <script>
+    $(document).ready(function(){
+        $("#demo").on("hide.bs.collapse", function(){
+            $(".btn").html('Więcej funkcji');
+        });
+        $("#demo").on("show.bs.collapse", function(){
+            $(".btn").html('Mniej funkcji');
+        });
+        $('#card').click(function() {
+            $(this).toggleClass('flipped')
+
+        });
+        $('#card1').click(function() {
+            $(this).toggleClass('flipped')
+
+        });
+        $('#card2').click(function() {
+            $(this).toggleClass('flipped')
+
+        });
+        $('#card3').click(function() {
+            $(this).toggleClass('flipped')
+
+        });
+
+    });
 $(function(){
     $("#slide-toogle").click(function(){
 
@@ -249,4 +295,3 @@ $(function(){
 </script>
 </body>
 </html>
-
