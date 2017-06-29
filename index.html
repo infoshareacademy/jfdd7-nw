@@ -116,8 +116,8 @@
             </div>
         </div>
     </section>
-         <button type="button" class="btn" data-toggle="collapse" data-target="#demo">Więcej funkcji</button>
-    <section id="demo" class="collapse">
+        <div id="slide-toogle">Naciśnij żeby rozwinąć</div>
+    <section id="extended-functions" style="display: none">
         <div class="container functions">
             <div class="col-sm-offset-1 col-sm-5">
                 <img class="img-responsive obrazek" src="images/powiadomienia.png"
@@ -183,9 +183,6 @@
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
                 </div>
-
-
-
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
                     <div id="kontener1">
                         <div id="card1">
@@ -199,9 +196,6 @@
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
                 </div>
-
-
-
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
                     <div id="kontener2">
                         <div id="card2">
@@ -215,9 +209,6 @@
                         <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png"></a>
                     </article>
                 </div>
-
-
-
                 <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-6 text-center">
                     <div id="kontener3">
                         <div id="card3">
@@ -288,6 +279,19 @@
         });
 
     });
+$(function(){
+    $("#slide-toogle").click(function(){
+
+        if ($('#extended-functions').css('display') == 'none') {
+            $("#slide-toogle").text('Naciśnij żeby zwinąć');
+            $("#extended-functions").slideDown();
+        }
+     else {
+            $("#extended-functions").slideUp();
+            $("#slide-toogle").text('Naciśnij żeby rozwinąć');
+        }
+    });
+});
 </script>
 </body>
 </html>

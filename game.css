@@ -1,0 +1,338 @@
+.game-table td {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    margin: 0;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.clicked {
+    background-color: blue ;
+}
+
+.a {
+    background-image: url("images/game-images/item-1.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.b {
+    background-image: url("images/game-images/item-2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.c {
+    background-image: url("images/game-images/item-3.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.d {
+    background-image: url("images/game-images/item-4.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.e {
+    background-image: url("images/game-images/item-5.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.f {
+    background-image: url("images/game-images/item-6.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.g {
+    background-image: url("images/game-images/item-7.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.h {
+    background-image: url("images/game-images/item-8.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.i {
+    background-image: url("images/game-images/item-9.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.j {
+    background-image: url("images/game-images/item-10.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.k {
+    background-image: url("images/game-images/item-11.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.l {
+    background-image: url("images/game-images/item-12.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.m {
+    background-image: url("images/game-images/item-13.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.n {
+    background-image: url("images/game-images/item-14.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.o {
+    background-image: url("images/game-images/item-15.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.p {
+    background-image: url("images/game-images/item-16.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.r {
+    background-image: url("images/game-images/item-17.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.s {
+    background-image: url("images/game-images/item-18.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.t {
+    background-image: url("images/game-images/item-19.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.u {
+    background-image: url("images/game-images/item-20.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.v {
+    background-image: url("images/game-images/item-21.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.w {
+    background-image: url("images/game-images/item-22.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.x {
+    background-image: url("images/game-images/item-23.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.y {
+    background-image: url("images/game-images/item-24.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.z {
+    background-image: url("images/game-images/item-25.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.a1 {
+    background-image: url("images/game-images/item-26.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.b1 {
+    background-image: url("images/game-images/item-27.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.c1 {
+    background-image: url("images/game-images/item-28.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.d1 {
+    background-image: url("images/game-images/item-29.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.e1 {
+    background-image: url("images/game-images/item-30.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.f1 {
+    background-image: url("images/game-images/item-31.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.g1 {
+    background-image: url("images/game-images/item-32.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.h1 {
+    background-image: url("images/game-images/item-33.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.i1 {
+    background-image: url("images/game-images/item-34.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.j1 {
+    background-image: url("images/game-images/item-35.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.k1 {
+    background-image: url("images/game-images/item-36.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+.szaszlyk {
+    max-width: 850px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("images/tlo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    /*ramka*/
+    /*border-image-slice: 15 15 15 15 fill;*/
+    /*border-image-width: 10px 10px 10px 10px;*/
+    /*border-image-outset: 0px 0px 0px 0px;*/
+    /*border-image-repeat: round round;*/
+    /*border-image-source: url("https://mdn.mozillademos.org/files/6011/border-image-3.png");*/
+
+}
+
+#game-board > div {
+    display: flex;
+    align-content: stretch;
+    margin-top: 10px;
+    padding: 0 44px;
+    background-color: #454d43;
+
+
+}
+
+#game-board > div > div {
+    height: 77px;
+    flex-grow: 1;
+    transform: skew(-43deg, 0deg);
+    border: 2px solid black;
+
+
+}
+
+#game-board > div > div:first-child {
+    border-left: 4px solid black;
+
+}
+
+
+#game-board > div > div:last-child {
+    border-right: 4px solid black;
+
+}
+
+
+#game-board > div > div:hover {
+    opacity: .7;
+    cursor: pointer;
+    border: 2px solid white;
+
+}
+
+#aim > div {
+    display: flex;
+    align-content: stretch;
+    border: solid 1px red;
+    height: 70px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+#aim{
+    width: 100%;
+    height: 80px;
+
+}
+#aim > div > div {
+    height: 60px;
+    border: 1px solid #000;
+    flex-grow: 1;
+    background-size: 58%;
+    background-position: center;
+    transform: none;
+
+}
+
+#game-board > div:first-child {
+    margin-top: 400px;
+}
+.produkty {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.dymek {
+    width: 80px;
+    height: 23px;
+    position: absolute;
+    background-color: black;
+    top: 34%;
+    left: 76%;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}

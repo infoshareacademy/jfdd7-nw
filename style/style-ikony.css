@@ -3,28 +3,30 @@ body {
     font-family: 'Didact Gothic', sans-serif;
     margin: 0;
 }
-
-
-
 .obrazek {
     margin: 2em auto;
 }
-
-
 .text {
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 .functions .obrazek {
     max-width: 100%;
 }
-
 .functions {
     padding: 3% 0;
 }
 .brakhiperlacza {
     text-decoration: none;
+}
+#slide-toogle {
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 0 0 20px black;
+}
+#slide-toogle:hover {
+    cursor: pointer;
+    font-weight: bold;
 }
