@@ -42,6 +42,7 @@
     margin: 0 auto;
     display: block;
     backface-visibility: hidden;
+    cursor: pointer;
 }
 
 #card .rotate {
@@ -82,7 +83,7 @@
     margin: 0 auto;
     display: block;
     backface-visibility: hidden;
-
+    cursor: pointer;
 }
 
 #card1 .rotate {
@@ -123,6 +124,7 @@
     margin: 0 auto;
     display: block;
     backface-visibility: hidden;
+    cursor: pointer;
 }
 
 #card2 .rotate {
@@ -161,6 +163,7 @@
     margin: 0 auto;
     display: block;
     backface-visibility: hidden;
+    cursor: pointer;
 }
 
 #card3 .rotate {

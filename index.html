@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="style/o-nas.css">
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
 
     <title>Zakupowy pomocnik!</title>
 
@@ -45,24 +47,6 @@
 </header>
 <main>
 
-    <script>
-        (function(){
-
-            window.addEventListener('scroll', function() {
-                var paralaxOne = document.querySelector('.parallax-one'),
-                    paralaxTwo = document.querySelector('.parallax-two'),
-                    paralaxThree = document.querySelector('.parallax-three');
-                    paralaxFour = document.querySelector('.parallax-Four');
-
-                var scrollY = window.scrollY;
-                paralaxOne.style.backgroundPositionY = (scrollY / 10 ) + 'px';
-                paralaxTwo.style.top = ( scrollY / 2 ) + 'px';
-                paralaxThree.style.top = ( scrollY / 3 ) + 'px';
-                paralaxFour.style.top = ( scrollY / 4 ) + 'px';
-
-            });
-        }())
-    </script>
 
     <section id="zajawka" class="intro parallax-one">
 
@@ -173,7 +157,7 @@
                     <div id="kontener">
                     <div id="card">
                         <img class="img-responsive center-block rotate" src="images/osoba.png">
-                        <img class="img-responsive center-block rotate2" src="images/pic_marcin.png">
+                        <img class="img-responsive center-block rotate2" src="images/pic_jarek.jpg">
                     </div>
                     </div>
 
@@ -251,47 +235,10 @@
         </div>
     </footer>
 </main>
-<script src="bootstrap/jquery.min.js"></script>
-<script src="bootstrap/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $("#demo").on("hide.bs.collapse", function(){
-            $(".btn").html('Więcej funkcji');
-        });
-        $("#demo").on("show.bs.collapse", function(){
-            $(".btn").html('Mniej funkcji');
-        });
-        $('#card').click(function() {
-            $(this).toggleClass('flipped')
 
-        });
-        $('#card1').click(function() {
-            $(this).toggleClass('flipped')
+<script src="javascript/paralaxa.js"></script>
+<script src="javascript/flip_pics.js"></script>
+<script src="javascript/toggle_function_button.js"></script>
 
-        });
-        $('#card2').click(function() {
-            $(this).toggleClass('flipped')
-
-        });
-        $('#card3').click(function() {
-            $(this).toggleClass('flipped')
-
-        });
-
-    });
-$(function(){
-    $("#slide-toogle").click(function(){
-
-        if ($('#extended-functions').css('display') == 'none') {
-            $("#slide-toogle").text('Naciśnij żeby zwinąć');
-            $("#extended-functions").slideDown();
-        }
-     else {
-            $("#extended-functions").slideUp();
-            $("#slide-toogle").text('Naciśnij żeby rozwinąć');
-        }
-    });
-});
-</script>
 </body>
 </html>
