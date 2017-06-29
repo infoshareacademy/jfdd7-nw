@@ -1,3 +1,6 @@
+.no-display{
+    display: none;
+}
 .game-table td {
     height: 50px;
     width: 50px;

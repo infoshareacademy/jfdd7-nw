@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="style/o-nas.css">
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="game.css">
 
     <title>Zakupowy pomocnik!</title>
 
@@ -147,18 +148,18 @@
         </div>
     </section>
     <section id="formularz" class="formularz container-fluid">
-        <fieldset class="container">
+        <fieldset id="form-field" class="container">
             <legend>
 
             </legend>
-            <form action="https://formspree.io/teamniewiem@gmail.com" method="POST">
+            <form action="https://formspree.io/teamniewiem@gmail.com" target="_blank" method="POST" id="form">
                 <div class="form-group">
                     <label class="podaj-email col-sm-5" for="exampleInputEmail1">Podaj swój e-mail:</label>
                     <div class="col-sm-offset-1 col-sm-10">
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                     </div>
                     <div class="col-sm-offset-1 col-sm-10">
-                        <button type="submit" class="btn btn-block">Wyślij</button>
+                        <button id="btn-game" type="submit" class="btn btn-block">Wyślij</button>
                     </div>
                 </div>
             </form>
@@ -253,6 +254,7 @@
 </main>
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
+<script src="scripts/game-start.js"></script>
 <script>
     $(document).ready(function(){
         $("#demo").on("hide.bs.collapse", function(){
