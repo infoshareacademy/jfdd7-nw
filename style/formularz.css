@@ -2,7 +2,7 @@ main > section > fieldset {
     max-width: 600px;
     border-radius: 6%;
     border: 0px;
-    max-height: 400px;
+    max-height: 490px;
     background: linear-gradient(to bottom, #8e8e8e, #2b3042);
     box-shadow: 0 5px 10px black;
     margin-bottom: 50px;
@@ -24,24 +24,37 @@ main > section > fieldset > legend {
     border-radius: 50%;
 }
 .formularz {
-    /*padding: 100px;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
     background-image: url(../images/tlo-o-nas2.png);
-    /*border-bottom: 2px solid lightgrey;*/
-    /*border-top: 2px solid lightgrey;*/
     margin-top: 20px;
     padding: 5% 0;
+    height: 150%;
 }
 main > section > fieldset > p {
     color: white;
     text-shadow: 2px 2px black;
-    margin: 70px 0 0 16px;
+    margin: 80px 0 0 16px;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
     vertical-align: middle;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .podaj-email{
     color: white;
     text-align: center;
+    padding: 11px 0;
+
+}
+.kiedy-rusza {
+    padding: 0 0 10px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-size: 1.25em;
+    vertical-align: middle;
+    padding-bottom: 20px;
+
+}
+.wyslij:hover {
+    opacity: 0.9;
 }
