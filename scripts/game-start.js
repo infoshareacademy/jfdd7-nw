@@ -4,10 +4,14 @@
 var gameBoard = $('formularz');
 var $formField = $('#form-field');
 var $formGame = $('#form');
+var $game = $('#game');
+var $navigation = $('#navigation');
+
+$($game.hide());
+
+
 $formGame.on('submit', function (event) {
     $formField.hide();
-    gameBoard.append()
+    $game.show();
+    $navigation.hide()
 });
-
-
-

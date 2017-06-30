@@ -21,7 +21,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -148,6 +148,23 @@
         </div>
     </section>
     <section id="formularz" class="formularz container-fluid">
+
+        <div class="container no-display" id="game">
+            <div class="szaszlyk">
+                <div id="aim">
+                    <h1 class="produkty">Odszukaj produkty:</h1>
+                </div>
+                <div id="game-board" class="game-table"></div>
+
+                <div class="dymek">
+                    <div id="score" class="score">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <fieldset id="form-field" class="container">
             <legend>
 
@@ -255,6 +272,7 @@
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
 <script src="scripts/game-start.js"></script>
+<script src="scripts/game.js"></script>
 <script>
     $(document).ready(function(){
         $("#demo").on("hide.bs.collapse", function(){

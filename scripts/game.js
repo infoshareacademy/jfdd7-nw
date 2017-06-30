@@ -3,7 +3,6 @@ var aims = document.querySelector('#aim');
 var score = document.querySelector('#score');
 var productToGet;
 var points = 0;
-
 var productTypes = ['a', 'b', 'c', 'd',
     'e', 'f', 'g', 'h',
     'i', 'j', 'k', 'l',
@@ -16,6 +15,7 @@ var productTypes = ['a', 'b', 'c', 'd',
     'em', 'em', 'em', 'em', 'em', 'em',
     'em', 'em', 'em', 'em', 'em', 'em',
     'em', 'em', 'em', 'em', 'em', 'em' ];
+
 
 function createList() {
     var listToGet = document.createElement('div');

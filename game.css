@@ -8,6 +8,9 @@
     margin: 0;
 
 }
+.game-table{
+    margin-top: -50px;
+}
 
 table {
     border-collapse: collapse;
