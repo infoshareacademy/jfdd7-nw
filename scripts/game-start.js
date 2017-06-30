@@ -11,7 +11,13 @@ $($game.hide());
 
 
 $formGame.on('submit', function (event) {
+    event.preventDefault();
+
     $formField.hide();
     $game.show();
     $navigation.hide()
+
+    $('html, body').animate({
+        scrollTop: $('#game').offset().top
+    }, 500);
 });
