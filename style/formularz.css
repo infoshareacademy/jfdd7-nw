@@ -29,6 +29,9 @@ main > section > fieldset > legend {
     padding: 5% 0;
     height: 150%;
 }
+#exampleInputEmail1 {
+    text-align: center;
+}
 main > section > fieldset > p {
     color: white;
     text-shadow: 2px 2px black;

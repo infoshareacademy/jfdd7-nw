@@ -1,6 +1,3 @@
-/**
- * Created by marcinkopystynski on 29.06.17.
- */
 $(function(){
     $("#slide-toogle").click(function(){
 
