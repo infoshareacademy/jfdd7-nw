@@ -17,13 +17,14 @@ var productTypes = ['a', 'b', 'c', 'd',
     'em', 'em', 'em', 'em', 'em', 'em' ];
 
 
+
 function createList() {
     var listToGet = document.createElement('div');
 
 
     for (var i = 0; i < 8; i += 1) {
         productToGet = document.createElement('div');
-        productToGet.classList.add(productTypes[Math.floor(Math.random() * 36)]);
+        productToGet.classList.add(productTypes[Math.floor(Math.random() * 35)]);
         listToGet.appendChild(productToGet);
     }
     aims.appendChild(listToGet);
@@ -82,9 +83,18 @@ function createTape(initialSpeed) {
             points += 1;
             score.innerText = points;
             event.target.className = '';
+            if(points >= 8){
+                alert('Gratulacje, wygrałeś!');
+                $game.hide();
+                $navigation.show();
+                $formField.show();
+                $buttonAgain.show();
+            }
         }
     });
-}
+
+      }
+
 
 createList();
 createTape(650);
