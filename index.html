@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="style/o-nas.css">
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="game.css">
     <script src="bootstrap/jquery.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
 
@@ -22,7 +23,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -131,11 +132,28 @@
         </div>
     </section>
     <section id="formularz" class="formularz container-fluid">
-        <fieldset class="container">
+
+        <div class="container no-display" id="game">
+            <div class="szaszlyk">
+                <div id="aim">
+                    <h1 class="produkty">Odszukaj produkty:</h1>
+                </div>
+                <div id="game-board" class="game-table"></div>
+
+                <div class="dymek">
+                    <div id="score" class="score">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <fieldset id="form-field" class="container">
             <legend>
 
             </legend>
-            <form action="https://formspree.io/teamniewiem@gmail.com" method="POST">
+            <form action="https://formspree.io/teamniewiem@gmail.com" target="_blank" method="POST" id="form">
                 <div class="form-group">
                     <label class="kiedy-rusza col-sm-12" for="exampleInputEmail1">Chcesz otrzymać wiadomość z informacją kiedy uruchomimy nasz serwis ?</label>
                     <label class="podaj-email col-xs-12" for="exampleInputEmail1">Podaj swój e-mail:</label>
@@ -143,7 +161,7 @@
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email@example.com">
                     </div>
                     <div class="col-sm-offset-1 col-sm-10">
-                        <button type="submit" class="btn btn-block wyslij">Wyślij</button>
+                        <button id="btn-game" type="submit" class="btn btn-block wyslij">Wyślij</button>
                     </div>
                 </div>
             </form>
@@ -235,7 +253,10 @@
         </div>
     </footer>
 </main>
-
+<script src="bootstrap/jquery.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+<script src="scripts/game-start.js"></script>
+<script src="scripts/game.js"></script>
 <script src="javascript/paralaxa.js"></script>
 <script src="javascript/flip_pics.js"></script>
 <script src="javascript/toggle_function_button.js"></script>

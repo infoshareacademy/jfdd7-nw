@@ -1,9 +1,15 @@
+.no-display{
+    display: none;
+}
 .game-table td {
     height: 50px;
     width: 50px;
     border: 1px solid black;
     margin: 0;
 
+}
+.game-table{
+    margin-top: -50px;
 }
 
 table {
@@ -244,12 +250,6 @@ table {
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-    /*ramka*/
-    /*border-image-slice: 15 15 15 15 fill;*/
-    /*border-image-width: 10px 10px 10px 10px;*/
-    /*border-image-outset: 0px 0px 0px 0px;*/
-    /*border-image-repeat: round round;*/
-    /*border-image-source: url("https://mdn.mozillademos.org/files/6011/border-image-3.png");*/
 
 }
 
@@ -321,6 +321,7 @@ table {
 .produkty {
     text-align: center;
     margin: 0 auto;
+    font-size: 3em;
 
 }
 
@@ -329,7 +330,7 @@ table {
     height: 23px;
     position: absolute;
     background-color: black;
-    top: 34%;
+    top: 36.5%;
     left: 76%;
     border-radius: 3px;
     color: white;
