@@ -18,8 +18,7 @@
     opacity: .8;
 }
 #about-us {
-    /*background-image: url("../images/tlo-o-nas2.png");*/
-    padding: 10% 0;
+    padding: 4% 0 7%;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     max-width: 263px;
@@ -184,54 +183,33 @@
     transform: rotateY( 180deg );
 }
 
+#about-us h2 {
+    text-shadow: 3px 3px 7px #142608;
+    margin-top: 50px;
+    text-align: center;
+    color: #3e3227;
+    font: bold 55px 'Didact Gothic', Sans-Serif;
+    vertical-align: middle;
+    display: block;
+    letter-spacing: 5px;
 
-
-
-.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
+}
+hr.style {
+    height: 30px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }
 
-.animated.infinite {
-    animation-iteration-count: infinite;
-}
 
-.animated.hinge {
-    animation-duration: 2s;
-}
-
-.animated.flipOutX,
-.animated.flipOutY,
-.animated.bounceIn,
-.animated.bounceOut {
-    animation-duration: .75s;
-}
-
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translate3d(-100%, 0, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInLeft {
-    animation-name: fadeInLeft;
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}

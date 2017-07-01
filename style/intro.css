@@ -88,7 +88,6 @@ h2 span {
         width: 20em;
         background: linear-gradient(to bottom, #8e8e8e, #202020);
         border: 2px solid black;
-        /*border-radius:10px;*/
         padding: 10px;
         margin-top: 55px;
         box-shadow: 0 4px 8px #373737;
@@ -114,7 +113,7 @@ h2 span {
     }
     .wrapper h2 {
         text-shadow: 1px 1px #142608;
-        margin: 30px: center;
+        margin: 30px;
         color: white;
         font: bold 15px 'Didact Gothic', Sans-Serif;
         letter-spacing: 1px;
@@ -163,7 +162,7 @@ h2 span {
     }
     .wrapper h2 {
         text-shadow: 1px 1px #142608;
-        margin: 30px: center;
+        margin: 30px;
         color: white;
         font: bold 15px 'Didact Gothic', Sans-Serif;
         letter-spacing: 1px;

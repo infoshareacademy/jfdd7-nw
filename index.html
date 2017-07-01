@@ -171,6 +171,7 @@
     </section>
     <section id="about-us">
         <div class="container">
+                <h2>NASZ TEAM</h2> <hr class="style"/>
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
                     <div id="kontener">
@@ -241,14 +242,14 @@
                 <a href="http://www.facebook.com" target="_blank"><img class="text-center size"
                                                                        src="images/footer/fb.svg"/></a>
                 <a href="https://plus.google.com" target="_blank"><img class="text-center size"
-                                                                       src="images/footer/google.svg"/></a>
+                                                                       src="images/footer/googleplus.svg"/></a>
                 <a href="http://www.twitter.com" target="_blank"><img class="text-center size"
                                                                       src="images/footer/twitter.svg"/></a>
                 <a href="http://www.youtube.com" target="_blank"><img class="text-center size"
                                                                       src="images/footer/youtube.svg"/></a>
             </div>
             <div class="col-xs-12 text-center">
-                <span class="prawa">2017 © Nie Wiem Team - imie nazwisko / imie nazwisko / imie nazwisko / imie nazwisko. Wszelkie prawa zastrzeżone. </span>
+                <span class="prawa">2017 © Nie Wiem Team - Jarosław Michalski / Marcin Kopystyński / Oskar Feliński / Mateusz Targowski. Wszelkie prawa zastrzeżone. </span>
             </div>
         </div>
     </footer>
@@ -261,66 +262,9 @@
 <script src="javascript/flip_pics.js"></script>
 <script src="javascript/toggle_function_button.js"></script>
 <script src="javascript/scroll.js"></script>
+<script src="javascript/icons_effects.js"></script>
 
-<script>
-    $(document).ready(function() {
-        $(window).scroll(function () {
-            var elem = $('#funkcje-produktu');
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
 
-            var elemTop = $(elem).offset().top;
-            var elemBottom = elemTop + $(elem).height();
-
-            if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-                $(elem).find("img").each(function (index) {
-                    $(this).addClass("animated swing")
-                })
-            } else {
-                $(elem).find("img").removeClass("animated swing")
-            }
-        });
-    });
-
-    $(document).ready(function() {
-        $(window).scroll(function () {
-            var elem = $('.left_pics');
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
-
-            var elemTop = $(elem).offset().top;
-            var elemBottom = elemTop + $(elem).height();
-
-            if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-                $(elem).find("img").each(function (index) {
-                    $(this).addClass("animated fadeInLeft")
-                })
-            } else {
-                $(elem).find("img").removeClass("animated fadeInLeft")
-            }
-        });
-    });
-
-    $(document).ready(function() {
-        $(window).scroll(function () {
-            var elem = $('.right_pics');
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
-
-            var elemTop = $(elem).offset().top;
-            var elemBottom = elemTop + $(elem).height();
-
-            if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-                $(elem).find("img").each(function (index) {
-                    $(this).addClass("animated fadeInRight")
-                })
-            } else {
-                $(elem).find("img").removeClass("animated fadeInRight")
-            }
-        });
-    });
-
-</script>
 
 
 </body>
