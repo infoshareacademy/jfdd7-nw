@@ -103,26 +103,27 @@
         <div id="slide-toogle">Naciśnij żeby rozwinąć</div>
     <section id="extended-functions" style="display: none">
         <div class="container functions">
-            <div class="col-sm-offset-1 col-sm-5">
+            <i id="left_pics"></i>
+            <div class="col-sm-offset-1 col-sm-5 left_pics">
                 <img class="img-responsive obrazek" src="images/powiadomienia.png"
                      alt="bądź na bieżąco z najniższymi cenami" title="bądź na bieżąco z najniższymi cenami"/>
                 <p class="text">Bądź na bieżąco z wybranymi przez Ciebie produktami - czekasz na dobrą promocję?
                     Poinformujemy Cię o niej!
                 </p>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-5 right_pics">
                 <img class="img-responsive obrazek" src="images/lokalizacja.png" alt="funkcja wyznaczania trasy"
                      title="funkcja wyznaczania trasy"/>
                 <p class="text">Wybierz sklep a wyznaczymy za Ciebie najlepszą trasę! Samochód, komunikacja miejska a
                     może pieszo ? Żaden problem !</p></div>
-            <div class="col-sm-offset-1 col-sm-5">
+            <div class="col-sm-offset-1 col-sm-5 left_pics">
                 <img class="img-responsive obrazek" src="images/baza.png" alt="kategorie produktów"
                      title="kategorie produktów"/>
                 <p class="text">Stale powiększana baza produktów. Prezent urodzinowy lub na rocznicę - a może coś dla
                     zwierzaka ?
                     Znajdź poszukiwany przedmiot w wybranych kategoriach!</p>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-5 right_pics">
                 <img class="img-responsive obrazek" src="images/miejsce.png" alt="wybierz dowolne miejsce odbioru"
                      title="wybierz dowolne miejsce odbioru"/>
                 <p class="text">Dopełnimy wszelkich starań by Twoja przesyłka dotarła tam gdzie tego chcesz! Praca, dom
@@ -260,6 +261,66 @@
 <script src="javascript/flip_pics.js"></script>
 <script src="javascript/toggle_function_button.js"></script>
 <script src="javascript/scroll.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function () {
+            var elem = $('#funkcje-produktu');
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+
+            if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
+                $(elem).find("img").each(function (index) {
+                    $(this).addClass("animated swing")
+                })
+            } else {
+                $(elem).find("img").removeClass("animated swing")
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        $(window).scroll(function () {
+            var elem = $('.left_pics');
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+
+            if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
+                $(elem).find("img").each(function (index) {
+                    $(this).addClass("animated fadeInLeft")
+                })
+            } else {
+                $(elem).find("img").removeClass("animated fadeInLeft")
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        $(window).scroll(function () {
+            var elem = $('.right_pics');
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+
+            if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
+                $(elem).find("img").each(function (index) {
+                    $(this).addClass("animated fadeInRight")
+                })
+            } else {
+                $(elem).find("img").removeClass("animated fadeInRight")
+            }
+        });
+    });
+
+</script>
 
 
 </body>
