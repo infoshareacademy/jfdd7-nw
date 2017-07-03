@@ -14,13 +14,14 @@
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="game.css">
-    <link rel="icon" href="images/logo_navbar.png">
-    <script src="bootstrap/jquery.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/jquery.min.js"></script>
+
 
     <title>Zakupowy pomocnik!</title>
 
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <header>
@@ -47,6 +48,7 @@
         </div>
     </nav>
 </header>
+
 <main>
 
     <section id="zajawka" class="intro parallax-one">
@@ -101,29 +103,30 @@
             </div>
         </div>
     </section>
-        <div id="slide-toogle">Naciśnij żeby rozwinąć</div>
+        <div id="slide-toogle">Naciśnij, aby poznać pozostałe funkcje</div>
     <section id="extended-functions" style="display: none">
         <div class="container functions">
-            <div class="col-sm-offset-1 col-sm-5">
+            <i id="left_pics"></i>
+            <div class="col-sm-offset-1 col-sm-5 left_pics">
                 <img class="img-responsive obrazek" src="images/powiadomienia.png"
                      alt="bądź na bieżąco z najniższymi cenami" title="bądź na bieżąco z najniższymi cenami"/>
                 <p class="text">Bądź na bieżąco z wybranymi przez Ciebie produktami - czekasz na dobrą promocję?
                     Poinformujemy Cię o niej!
                 </p>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-5 right_pics">
                 <img class="img-responsive obrazek" src="images/lokalizacja.png" alt="funkcja wyznaczania trasy"
                      title="funkcja wyznaczania trasy"/>
                 <p class="text">Wybierz sklep a wyznaczymy za Ciebie najlepszą trasę! Samochód, komunikacja miejska a
                     może pieszo ? Żaden problem !</p></div>
-            <div class="col-sm-offset-1 col-sm-5">
+            <div class="col-sm-offset-1 col-sm-5 left_pics">
                 <img class="img-responsive obrazek" src="images/baza.png" alt="kategorie produktów"
                      title="kategorie produktów"/>
                 <p class="text">Stale powiększana baza produktów. Prezent urodzinowy lub na rocznicę - a może coś dla
                     zwierzaka ?
                     Znajdź poszukiwany przedmiot w wybranych kategoriach!</p>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-5 right_pics">
                 <img class="img-responsive obrazek" src="images/miejsce.png" alt="wybierz dowolne miejsce odbioru"
                      title="wybierz dowolne miejsce odbioru"/>
                 <p class="text">Dopełnimy wszelkich starań by Twoja przesyłka dotarła tam gdzie tego chcesz! Praca, dom
@@ -171,6 +174,7 @@
     </section>
     <section id="about-us">
         <div class="container">
+                <h2>POZNAJ NASZ ZESPÓŁ</h2> <hr class="style"/>
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 text-center">
                     <div id="kontener">
@@ -230,10 +234,10 @@
     <footer class="footer">
         <div class="container">
             <div class="col-sm-12 text-center biznes">
-                <a class="col-xs-6 hvr-underline-from-left" href="#">Reklama w serwisie</a>
-                <a class="col-xs-6 hvr-underline-from-left" href="#">Polityka prywatności</a>
-                <a class="col-xs-6 hvr-underline-from-left" href="#">Regulamin serwisu</a>
-                <a class="col-xs-6 hvr-underline-from-left" href="#">Kontakt</a>
+                <a class="col-xs-6 hvr-underline-from-left footer-list" href="#">Reklama w serwisie</a>
+                <a class="col-xs-6 hvr-underline-from-left footer-list" href="#">Polityka prywatności</a>
+                <a class="col-xs-6 hvr-underline-from-left footer-list" href="#">Regulamin serwisu</a>
+                <a class="col-xs-6 hvr-underline-from-left footer-list" href="#">Kontakt</a>
             </div>
             <p class="col-xs-12 text-center znajdz">Znajdziesz nas na:</p>
             <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4 text-center social-media img-responsive">
@@ -241,14 +245,14 @@
                 <a href="http://www.facebook.com" target="_blank"><img class="text-center size"
                                                                        src="images/footer/fb.svg"/></a>
                 <a href="https://plus.google.com" target="_blank"><img class="text-center size"
-                                                                       src="images/footer/google.svg"/></a>
+                                                                       src="images/footer/googleplus.svg"/></a>
                 <a href="http://www.twitter.com" target="_blank"><img class="text-center size"
                                                                       src="images/footer/twitter.svg"/></a>
                 <a href="http://www.youtube.com" target="_blank"><img class="text-center size"
                                                                       src="images/footer/youtube.svg"/></a>
             </div>
             <div class="col-xs-12 text-center">
-                <span class="prawa">2017 © Nie Wiem Team - imie nazwisko / imie nazwisko / imie nazwisko / imie nazwisko. Wszelkie prawa zastrzeżone. </span>
+                <span class="prawa">2017 © Nie Wiem Team - Jarosław Michalski / Marcin Kopystyński / Oskar Feliński / Mateusz Targowski. Wszelkie prawa zastrzeżone. </span>
             </div>
         </div>
     </footer>
@@ -261,6 +265,8 @@
 <script src="javascript/flip_pics.js"></script>
 <script src="javascript/toggle_function_button.js"></script>
 <script src="javascript/scroll.js"></script>
+<script src="javascript/icons_effects.js"></script>
+
 
 
 </body>

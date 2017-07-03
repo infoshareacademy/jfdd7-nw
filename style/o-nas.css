@@ -18,8 +18,7 @@
     opacity: .8;
 }
 #about-us {
-    /*background-image: url("../images/tlo-o-nas2.png");*/
-    padding: 10% 0;
+    padding: 4% 0 7%;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     max-width: 263px;
@@ -183,3 +182,43 @@
 #card3.flipped {
     transform: rotateY( 180deg );
 }
+
+#about-us h2 {
+    text-shadow: 2px 2px 5px #3e3227;
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    font: bold 40px 'Didact Gothic', Sans-Serif;
+    vertical-align: middle;
+    display: block;
+    letter-spacing: 33px;
+    opacity: 0.8;
+
+}
+hr.style {
+    height: 30px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+   #about-us a img {
+       margin-bottom: 30px;
+
+    }
+}
+
+
+
