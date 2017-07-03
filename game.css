@@ -297,7 +297,7 @@ table {
     border: solid 1px red;
     height: 70px;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 #aim{
@@ -336,4 +336,27 @@ table {
     color: white;
     text-align: center;
     vertical-align: middle;
+}
+#startDiv{
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    background-color: #55bbe6;
+    z-index: 12000;
+    left: 5%;
+    top: 20%;
+    border: solid black 2px;
+    border-radius: 5%;
+    text-align: center;
+
+}
+#startDiv > h2{
+    margin-top: 3%;
+}
+#startDiv > button{
+    margin-top: 2%;
+    text-align: center;
+    padding: 3% 7%;
+    font-size: 2em;
+
 }
