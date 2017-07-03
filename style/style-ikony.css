@@ -3,7 +3,7 @@ body {
     font-family: 'Didact Gothic', sans-serif;
     margin: 0;
 }
-.obrazek {
+.prod-image {
     margin: 2em auto;
 }
 .text {
@@ -12,15 +12,12 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.functions .obrazek {
+.functions .prod-image {
     max-width: 100%;
 }
 .functions {
     padding-top: 5%;
     padding-bottom: 5%;
-}
-.brakhiperlacza {
-    text-decoration: none;
 }
 
 #slide-toogle {

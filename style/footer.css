@@ -6,7 +6,7 @@
     /*background: rgba(0, 0, 0, 0.6);*/
     min-height: 10em;
 }
-.biznes {
+.footer-info {
     font-size: 1.5em;
 }
 .social-media {
@@ -16,7 +16,7 @@
     color: white;
     max-width: 100%;
 }
-.znajdz {
+.findUs{
     padding: 2em 0 0;
     color: white;
     font-size: 16px;
@@ -25,20 +25,20 @@
     opacity: 0.8;
 
 }
-.biznes a {
+.footer-info a {
     color: white;
     text-shadow: 2px 2px black;
 }
-.biznes a:hover {
+.footer-info a:hover {
     color: black;
     text-decoration: none;
     font-weight: bold;
     text-shadow: 0 0 black;
 }
-.biznes a:focus{
+.footer-info a:focus{
     text-decoration: none;
 }
-.prawa {
+.allRights {
     color: white;
 }
 .size {
@@ -74,7 +74,7 @@
     right: 0;
 }
 @media (max-device-width: 799px) {
-    .biznes a {
+    .footer-info a {
         display: block;
         width: 50%;
         padding: 0.1em 0 2em 0;
@@ -85,7 +85,7 @@
     }
 }
 @media screen and (min-width: 800px) {
-    .biznes {
+    .footer-info {
         display: flex;
         justify-content: space-between;
     }
