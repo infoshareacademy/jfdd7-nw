@@ -89,6 +89,7 @@ function createTape(initialSpeed) {
                 $navigation.show();
                 $formField.show();
                 $buttonAgain.show();
+                body.location.reload(true);
             }
         }
     });

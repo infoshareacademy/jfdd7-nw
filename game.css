@@ -350,12 +350,13 @@ table {
     text-align: center;
 
 }
-#startDiv > p{
-    padding-top: 20%;
-    color: white;
-    text-shadow: 2px 2px black;
-    font-size: 2em;
+#startDiv > h2{
+    margin-top: 3%;
 }
 #startDiv > button{
+    margin-top: 2%;
     text-align: center;
+    padding: 3% 7%;
+    font-size: 2em;
+
 }
