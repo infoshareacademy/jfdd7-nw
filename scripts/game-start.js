@@ -14,7 +14,6 @@ $($game.hide());
 $($buttonAgain.hide());
 
 $formGame.on('submit', function (event) {
-    event.preventDefault();
 
     $formField.hide();
     $game.show();
