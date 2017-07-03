@@ -212,4 +212,12 @@ hr.style:before {
     border-radius: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+   #about-us a img {
+       margin-bottom: 30px;
+
+    }
+}
+
+
 
