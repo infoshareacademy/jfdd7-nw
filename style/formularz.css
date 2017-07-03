@@ -42,13 +42,13 @@ main > section > fieldset > p {
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
-.podaj-email{
+.form-mail{
     color: white;
     text-align: center;
     padding: 11px 0;
 
 }
-.kiedy-rusza {
+.form-info {
     padding: 0 0 10px;
     color: white;
     text-align: center;
@@ -58,7 +58,7 @@ main > section > fieldset > p {
     padding-bottom: 20px;
 
 }
-.wyslij:hover {
+.send:hover {
     opacity: 0.9;
 }
 

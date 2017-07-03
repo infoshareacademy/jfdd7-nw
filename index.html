@@ -14,8 +14,7 @@
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="game.css">
-    <script src="bootstrap/bootstrap.min.js"></script>
-    <script src="bootstrap/jquery.min.js"></script>
+
 
 
     <title>Zakupowy pomocnik!</title>
@@ -137,7 +136,7 @@
     <section id="formularz" class="formularz container-fluid">
 
         <div class="container no-display" id="game">
-            <div class="szaszlyk">
+            <div class="game-main">
                 <div id="startDiv">
                     <h1>Zakupy!</h1>
                     <h2>Zdobądź 8 produktów z górnej belki.</h2>
@@ -145,11 +144,11 @@
                     <button class="btn btn-danger btn-lg" id="begin">Start</button>
                 </div>
                 <div id="aim">
-                    <h1 class="produkty">Odszukaj produkty:</h1>
+                    <h1 class="products">Odszukaj produkty:</h1>
                 </div>
                 <div id="game-board" class="game-table"></div>
 
-                <div class="dymek">
+                <div class="points">
                     <div id="score" class="score">
                     </div>
                 </div>
@@ -164,14 +163,14 @@
             </legend>
             <form action="https://formspree.io/teamniewiem@gmail.com" target="_blank" method="POST" id="form">
                 <div class="form-group">
-                    <label class="kiedy-rusza col-sm-12" for="exampleInputEmail1">Chcesz otrzymać wiadomość z informacją kiedy uruchomimy nasz serwis ?</label>
-                    <label class="podaj-email col-xs-12" for="exampleInputEmail1">Podaj swój e-mail:</label>
+                    <label class="form-info col-sm-12" for="exampleInputEmail1">Chcesz otrzymać wiadomość z informacją kiedy uruchomimy nasz serwis ?</label>
+                    <label class="form-mail col-xs-12" for="exampleInputEmail1">Podaj swój e-mail:</label>
                     <div class="col-sm-offset-1 col-sm-10">
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email@example.com">
                     </div>
                     <div class="col-sm-offset-1 col-sm-10">
-                        <button id="btn-game" type="submit" class="btn btn-block wyslij">Wyślij</button>
-                        <button id="btn-game-again" type="submit" class="btn btn-block wyslij">Zagraj jeszcze raz!</button>
+                        <button id="btn-game" type="submit" class="btn btn-block send">Wyślij</button>
+                        <!--<button id="btn-game-again" type="submit" class="btn btn-block send">Zagraj jeszcze raz!</button>-->
                     </div>
                 </div>
             </form>

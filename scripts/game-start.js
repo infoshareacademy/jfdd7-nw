@@ -24,16 +24,16 @@ $formGame.on('submit', function (event) {
     }, 500);
 });
 
-$buttonAgain.on('submit', function (event) {
-    event.preventDefault();
-    $formField.hide();
-    $game.show();
-    $navigation.hide();
-
-    $('html, body').animate({
-        scrollTop: $('#game').offset().top
-    }, 500);
-});
+// $buttonAgain.on('submit', function (event) {
+//     event.preventDefault();
+//     $formField.hide();
+//     $game.show();
+//     $navigation.hide();
+//
+//     $('html, body').animate({
+//         scrollTop: $('#game').offset().top
+//     }, 500);
+// });
 
 $begin.on('click', function (event) {
     event.preventDefault();
