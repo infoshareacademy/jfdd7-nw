@@ -22,14 +22,21 @@
 .navbar-default .navbar-nav>li>a {
     color: white;
 }
+
+.navbar-default .navbar-toggle {
+    margin-right: 28px;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    color: white;
+}
+
 .navbar-default .navbar-nav>li>a:hover {
     background-color: floralwhite;
     color: black;
     transform: scale(1);
 }
-.navbar-default .navbar-toggle {
-    margin-right: 28px;
-}
+
 @media (min-width: 768px) {
     .my-navbar {
         display: block;
