@@ -337,3 +337,22 @@ table {
     text-align: center;
     vertical-align: middle;
 }
+#startDiv{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: lightblue;
+    z-index: 12000;
+    left: 5%;
+    top: 5%;
+    border: solid black 2px;
+    border-radius: 5%;
+    text-align: center;
+
+}
+#startDiv > p{
+    padding-top: 40%;
+}
+#startDiv > button{
+    text-align: center;
+}

@@ -7,6 +7,8 @@ var $formGame = $('#form');
 var $game = $('#game');
 var $navigation = $('#navigation');
 var $buttonAgain = $('#btn-game-again');
+var $begin = $('#begin');
+var $startD = $('#startDiv');
 
 $($game.hide());
 $($buttonAgain.hide());
@@ -32,4 +34,9 @@ $buttonAgain.on('submit', function (event) {
     $('html, body').animate({
         scrollTop: $('#game').offset().top
     }, 500);
+});
+
+$begin.on('click', function (event) {
+    event.preventDefault();
+    $startD.hide();
 });
