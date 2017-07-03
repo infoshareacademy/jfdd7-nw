@@ -240,7 +240,7 @@ table {
 }
 
 
-.szaszlyk {
+.game-main {
     max-width: 850px;
     padding: 10px;
     display: block;
@@ -318,14 +318,14 @@ table {
 #game-board > div:first-child {
     margin-top: 400px;
 }
-.produkty {
+.products {
     text-align: center;
     margin: 0 auto;
     font-size: 3em;
 
 }
 
-.dymek {
+.points {
     width: 80px;
     height: 23px;
     position: absolute;
